@@ -16,7 +16,7 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
-			if ($text contains 'สเต็ก') {
+			if (strpos($text, 'สเต็ก') !== false) {
 				// Build message to reply back
 				$messages = [
 					'type' => 'text',
