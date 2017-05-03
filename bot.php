@@ -29,7 +29,7 @@ if (!is_null($events['events'])) {
 						   6.ค้นหาโปรโมชั่น'
 				];
 			}
-			if (strpos($text, 'หาร้านแนะนำ') !== false) {
+			else if (strpos($text, 'หาร้านแนะนำ') !== false) {
 				// Build message to reply back
 				$messages = [
 					'type' => 'text',
