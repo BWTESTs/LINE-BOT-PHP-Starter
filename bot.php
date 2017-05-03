@@ -225,6 +225,110 @@ if (!is_null($events['events'])) {
 					  ),
 				];
 			}
+			else if (strpos($text, 'สเต็ก') !== false)
+			{
+				$messages = [
+					  'type' => 'template', 
+					  'altText' => 'this is a carousel template', 
+					  'template' =>  
+					  array ( 
+					    'type' => 'carousel', 
+					    'columns' =>  
+					    array ( 
+					      array ( 
+						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/11/01/ddb28578db4d41b08ca94af7c85f8b8c.jpg', 
+						'title' => 'ร้าน Arno"s Butcher and Eatery', 
+						'text' => 'description', 
+						'actions' =>  
+						  array ( 
+							  array ( 
+							    'type' => 'uri', 
+							    'label' => 'View detail',
+							    'uri' => 'https://www.wongnai.com/reviews/d7d8e9e75bf841cc8724f25e59513488',
+							  ),
+							  array ( 
+							    'type' => 'postback', 
+							    'label' => 'Tel:0xx-xxx-xxxx', 
+							    'data' => 'action=add&itemid=111',
+							  ),
+						  ),
+					      ), 
+					      array ( 
+						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/06/19/a2a8f17558764ee2be573211057ec2e5.jpg', 
+						'title' => 'ร้าน El Gaucho Argentinian Steakhouse', 
+						'text' => 'description', 
+						'actions' =>  
+						array ( 
+						    	  array ( 
+							    'type' => 'uri', 
+							    'label' => 'View detail',
+							    'uri' => 'https://www.wongnai.com/reviews/b5ffccc708e44a44ae9879cced423b26',
+							  ),
+							  array ( 
+							    'type' => 'postback', 
+							    'label' => 'Tel:0xx-xxx-xxxx', 
+							    'data' => 'action=add&itemid=111',
+							  ),
+						  ),
+					      ),
+					      array ( 
+						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2015/04/24/00cb90b5f9d64009be5e7fc4a22537ff.jpg', 
+						'title' => 'ร้าน Kritsada Steak House', 
+						'text' => 'description', 
+						'actions' =>  
+						array ( 
+						    	  array ( 
+							    'type' => 'uri', 
+							    'label' => 'View detail',
+							    'uri' => 'https://www.wongnai.com/reviews/9a412c24510d4e8f813a807f7d99b0f7',
+							  ),
+							  array ( 
+							    'type' => 'postback', 
+							    'label' => 'Tel:0xx-xxx-xxxx', 
+							    'data' => 'action=add&itemid=111',
+							  ),
+						  ),
+					      ),
+					      array ( 
+						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/11/06/0f980e8aece64b76a4223fd5d7fa8042.jpg', 
+						'title' => 'ร้าน Eat Am Are', 
+						'text' => 'description', 
+						'actions' =>  
+						array ( 
+						    	  array ( 
+							    'type' => 'uri', 
+							    'label' => 'View detail',
+							    'uri' => 'https://www.wongnai.com/reviews/d4ef2adb6a614ddc83298503819ff3b0',
+							  ),
+							  array ( 
+							    'type' => 'postback', 
+							    'label' => 'Tel:0xx-xxx-xxxx', 
+							    'data' => 'action=add&itemid=111',
+							  ),
+						  ),
+					      ),
+					      array ( 
+						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/11/19/26da29c395dc45c6b391735c1060ebd7.jpg', 
+						'title' => 'ร้าน Kobe Steakhouse', 
+						'text' => 'description', 
+						'actions' =>  
+						array ( 
+						    	  array ( 
+							    'type' => 'uri', 
+							    'label' => 'View detail',
+							    'uri' => 'https://www.wongnai.com/reviews/844be4ff506b48ebad403e36986e26d6',
+							  ),
+							  array ( 
+							    'type' => 'postback', 
+							    'label' => 'Tel:0xx-xxx-xxxx', 
+							    'data' => 'action=add&itemid=111',
+							  ),
+						  ),
+					      ),
+					    ), 
+					  ),
+				];
+			}
 			else if (strpos($text, 'สูตรอาหาร') !== false)
 			{
 				
