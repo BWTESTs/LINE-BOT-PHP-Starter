@@ -41,17 +41,17 @@ if (!is_null($events['events'])) {
 						  array ( 
 						    'type' => 'postback', 
 						    'label' => 'Buy', 
-						    'data' => 'action=buy&itemid=111', 
+						    'data' => 'action=buy&itemid=111' 
 						  ), 
 						  array ( 
 						    'type' => 'postback', 
 						    'label' => 'Add to cart', 
-						    'data' => 'action=add&itemid=111', 
+						    'data' => 'action=add&itemid=111' 
 						  ), 
 						  array ( 
 						    'type' => 'uri', 
 						    'label' => 'View detail', 
-						    'uri' => 'http://example.com/page/111', 
+						    'uri' => 'http://example.com/page/111' 
 						  ), 
 						), 
 					      ), 
@@ -64,17 +64,17 @@ if (!is_null($events['events'])) {
 						  array ( 
 						    'type' => 'postback', 
 						    'label' => 'Buy', 
-						    'data' => 'action=buy&itemid=222', 
+						    'data' => 'action=buy&itemid=222' 
 						  ),  
 						  array ( 
 						    'type' => 'postback', 
 						    'label' => 'Add to cart', 
-						    'data' => 'action=add&itemid=222', 
+						    'data' => 'action=add&itemid=222' 
 						  ), 
 						  array ( 
 						    'type' => 'uri', 
 						    'label' => 'View detail', 
-						    'uri' => 'http://example.com/page/222', 
+						    'uri' => 'http://example.com/page/222' 
 						  ), 
 						), 
 					      ), 
