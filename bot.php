@@ -329,6 +329,110 @@ if (!is_null($events['events'])) {
 					  ),
 				];
 			}
+			else if (strpos($text, 'หมูกะทะ') !== false)
+			{
+				$messages = [
+					  'type' => 'template', 
+					  'altText' => 'this is a carousel template', 
+					  'template' =>  
+					  array ( 
+					    'type' => 'carousel', 
+					    'columns' =>  
+					    array ( 
+					      array ( 
+						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2015/09/17/ba9b0a672fbf43b8b9d13d17fb2c1721.jpg', 
+						'title' => 'ร้าน มังกรซีฟู้ดส์', 
+						'text' => 'description', 
+						'actions' =>  
+						  array ( 
+							  array ( 
+							    'type' => 'uri', 
+							    'label' => 'View detail',
+							    'uri' => 'https://www.wongnai.com/reviews/e3b9916e89b64da794a5be43a51b07e8',
+							  ),
+							  array ( 
+							    'type' => 'postback', 
+							    'label' => 'Tel:0xx-xxx-xxxx', 
+							    'data' => 'action=add&itemid=111',
+							  ),
+						  ),
+					      ), 
+					      array ( 
+						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2011/10/13/ff80808132d2fde50132f9b380315dca.jpg', 
+						'title' => 'ร้าน เอี่ยมโภชนา', 
+						'text' => 'description', 
+						'actions' =>  
+						array ( 
+						    	  array ( 
+							    'type' => 'uri', 
+							    'label' => 'View detail',
+							    'uri' => 'https://www.wongnai.com/reviews/bac3332eacb545d294992f7fbddb86e9',
+							  ),
+							  array ( 
+							    'type' => 'postback', 
+							    'label' => 'Tel:0xx-xxx-xxxx', 
+							    'data' => 'action=add&itemid=111',
+							  ),
+						  ),
+					      ),
+					      array ( 
+						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2015/03/21/060216e0926b4d44babf19864cf14637.jpg', 
+						'title' => 'ร้าน บาร์บีคิว รีสอร์ท', 
+						'text' => 'description', 
+						'actions' =>  
+						array ( 
+						    	  array ( 
+							    'type' => 'uri', 
+							    'label' => 'View detail',
+							    'uri' => 'https://www.wongnai.com/reviews/69e8ea66d20f40999a4fbdb44e587270',
+							  ),
+							  array ( 
+							    'type' => 'postback', 
+							    'label' => 'Tel:0xx-xxx-xxxx', 
+							    'data' => 'action=add&itemid=111',
+							  ),
+						  ),
+					      ),
+					      array ( 
+						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2012/02/20/ff808081357c87fe013599e623625480.jpg', 
+						'title' => 'ร้าน เดอะซีซั่น', 
+						'text' => 'description', 
+						'actions' =>  
+						array ( 
+						    	  array ( 
+							    'type' => 'uri', 
+							    'label' => 'View detail',
+							    'uri' => 'https://www.wongnai.com/reviews/317289c508e94ab289d6681f1db59375',
+							  ),
+							  array ( 
+							    'type' => 'postback', 
+							    'label' => 'Tel:0xx-xxx-xxxx', 
+							    'data' => 'action=add&itemid=111',
+							  ),
+						  ),
+					      ),
+					      array ( 
+						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/03/11/d92274ed48c440a4bf3b1a397aea8b7d.jpg', 
+						'title' => 'ร้าน Grill Station', 
+						'text' => 'description', 
+						'actions' =>  
+						array ( 
+						    	  array ( 
+							    'type' => 'uri', 
+							    'label' => 'View detail',
+							    'uri' => 'https://www.wongnai.com/reviews/2b725afae2d7444eb93bd79045ff8b19',
+							  ),
+							  array ( 
+							    'type' => 'postback', 
+							    'label' => 'Tel:0xx-xxx-xxxx', 
+							    'data' => 'action=add&itemid=111',
+							  ),
+						  ),
+					      ),
+					    ), 
+					  ),
+				];
+			}
 			else if (strpos($text, 'สูตรอาหาร') !== false)
 			{
 				
