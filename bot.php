@@ -25,21 +25,24 @@ if (!is_null($events['events'])) {
 			}
 			else { 
 				$messages = [
-					'type' => 'template',
-					'altText' => 'this is a carousel template',
-					'template' => [
-						'type' => 'carousel',
-						'columns' => [
-							'thumbnailImageUrl' => 'https://example.com/bot/images/item1.jpg',
-							'title' => 'this is menu',
-							'text' => 'description',
-							'actions' => [
-								'type' => 'postback',
-								'label' => 'Buy',
-								'data' => 'action=buy&itemid=111'
-							]
-						]
-					]
+					for my $i (1..5) { 
+					    my $column = LINE::Bot::API::Builder::TemplateMessage::Column->new( 
+						image_url => 'https://example.com/bot/images/item.jpg', 
+						title     => "carousel $i", 
+						text      => "description $i", 
+					    )->add_postback_action( 
+						label => 'postback', 
+						data  => 'postback data', 
+						text  => 'postback message', 
+					    )->add_message_action( 
+						label => 'message', 
+						text  => 'message', 
+					    )->add_uri_action( 
+						label => 'uri', 
+						uri   => 'http://example.com/', 
+					    ); 
+					    $carousel->add_column($column->build); 
+					}
 				];
 			}
 			
