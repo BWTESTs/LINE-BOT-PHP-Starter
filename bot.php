@@ -46,9 +46,9 @@ if (!is_null($events['events'])) {
 						'actions' =>  
 						array ( 
 						  array ( 
-						    'type' => 'message', 
-						    'label' => 'เลือกประเภทอาหารที่จะกิน', 
-						    'data' => 'ก๋วยเตี๋ยว', 
+						    'type' => 'postback', 
+						    'label' => 'Add to cart', 
+						    'data' => 'action=add&itemid=111', 
 						  ), 
 						  array ( 
 						    'type' => 'postback', 
