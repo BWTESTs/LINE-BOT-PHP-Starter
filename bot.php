@@ -44,55 +44,45 @@ if (!is_null($events['events'])) {
 						'title' => 'ก๋วยเตี๋ยว', 
 						'text' => '', 
 						'actions' =>  
-						  array ( 
 						    'type' => 'message', 
 						    'label' => 'กดเลือกอาหารที่จะกิน', 
 						    'data' => 'เลือกประเภทอาหาร' 
-						  ),
 					      ), 
 					      array ( 
 						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2015/09/17/ba9b0a672fbf43b8b9d13d17fb2c1721.jpg', 
 						'title' => 'หมูกะทะ', 
 						'text' => '', 
 						'actions' =>  
-						  array ( 
 						    'type' => 'message', 
 						    'label' => 'กดเลือกอาหารที่จะกิน', 
 						    'data' => 'เลือกประเภทอาหาร'
-						  ),
 					      ),
 					      array ( 
 						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/11/01/ddb28578db4d41b08ca94af7c85f8b8c.jpg', 
 						'title' => 'สเต็ก'
 						'text' => '', 
 						'actions' =>  
-						  array ( 
 						    'type' => 'message', 
 						    'label' => 'กดเลือกอาหารที่จะกิน', 
 						    'data' => 'เลือกประเภทอาหาร'
-						  ),
 					      ),
 					      array ( 
 						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/09/20/8006bef53887403e9d27815ed15f6470.jpg', 
 						'title' => 'ส้มตำ', 
 						'text' => '', 
 						'actions' =>  
-						  array ( 
 						    'type' => 'message', 
 						    'label' => 'กดเลือกอาหารที่จะกิน', 
 						    'data' => 'เลือกประเภทอาหาร'
-						  ),
 					      ),
 					      array ( 
 						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/08/21/c25acd780f4649d499bf9d90502d7ada.jpg', 
 						'title' => 'อาหารญี่ปุ่น', 
 						'text' => '', 
 						'actions' =>  
-						  array ( 
 						    'type' => 'message', 
 						    'label' => 'กดเลือกอาหารที่จะกิน', 
 						    'data' => 'เลือกประเภทอาหาร'
-						  ),
 					      ),
 					    ), 
 					  ),
