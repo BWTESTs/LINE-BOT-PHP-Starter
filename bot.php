@@ -25,9 +25,28 @@ if (!is_null($events['events'])) {
 			}
 			else { 
 				$messages = [
-					'type' => 'image', 
-					'originalContentUrl' => 'http://wallpaper-gallery.net/images/picture/picture-14.jpg', 
-					'previewImageUrl' => 'http://wallpaper-gallery.net/images/picture/picture-14.jpg'
+					'type' => 'template', 
+					  'altText' => 'this is a confirm template', 
+					  'template' =>  
+					  ( 
+					    'type' => 'confirm', 
+					    'text' => 'Are you sure?', 
+					    'actions' =>  
+					    ( 
+					      0 =>  
+					      ( 
+						'type' => 'message', 
+						'label' => 'Yes', 
+						'text' => 'yes', 
+					      ), 
+					      1 =>  
+					      ( 
+						'type' => 'message', 
+						'label' => 'No', 
+						'text' => 'no', 
+					      ), 
+					    ), 
+					  ),
 				];
 			}
 			// Make a POST Request to Messaging API to reply to sender
