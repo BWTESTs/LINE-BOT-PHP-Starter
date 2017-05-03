@@ -21,31 +21,18 @@ if (!is_null($events['events'])) {
 				$messages = [
 					'type' => 'text',
 					'text' => 'ค้นหาร้านอาหาร หรือสอบถามข้อมูลได้ง่าย ๆ ดังนี้
-						   1.ค้นหาร้านอาหารแนะนำ
-						   2.ค้นหาร้านอาหาร
-						   3.ค้นหาอาหารตามประเภท
-						   4.ค้นหาจากชื่อร้าน
-						   5.ขอสูตรอาหาร
-						   6.ค้นหาโปรโมชั่น'
+					1.ค้นหาร้านอาหารแนะนำ
+					2.ค้นหาร้านอาหาร
+					3.ค้นหาอาหารตามประเภท
+					4.ค้นหาจากชื่อร้าน
+					5.ขอสูตรอาหาร
+					6.ค้นหาโปรโมชั่น'
 				];
 			}
-			else if (strpos($text, 'หาร้านแนะนำ') !== false) {
+			else if (strpos($text, 'แนะนำ') !== false) {
 				// Build message to reply back
 				$messages = [
-					'type' => 'text',
-					'text' => 'ค้นหาร้านอาหาร หรือสอบถามข้อมูลได้ง่าย ๆ ดังนี้
-						   1.ค้นหาร้านอาหารแนะนำ
-						   2.ค้นหาร้านอาหาร
-						   3.ค้นหาอาหารตามประเภท
-						   4.ค้นหาจากชื่อร้าน
-						   5.ขอสูตรอาหาร
-						   6.ค้นหาโปรโมชั่น
-						   แนะนำ'
-				];
-			}
-			else { 
-				$messages = [
-					  'type' => 'template', 
+					'type' => 'template', 
 					  'altText' => 'this is a carousel template', 
 					  'template' =>  
 					  array ( 
@@ -53,53 +40,117 @@ if (!is_null($events['events'])) {
 					    'columns' =>  
 					    array (  
 					      array ( 
-						'thumbnailImageUrl' => 'https://example.com/bot/images/item1.jpg', 
-						'title' => 'this is menu', 
-						'text' => 'description', 
+						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/02/22/cac93497800a43aabd8b7feae8053ed7.jpg', 
+						'title' => 'ก๋วยเตี๋ยว', 
+						'text' => '', 
 						'actions' =>  
-						array ( 
 						  array ( 
-						    'type' => 'postback', 
-						    'label' => 'Buy', 
-						    'data' => 'action=buy&itemid=111' 
-						  ), 
-						  array ( 
-						    'type' => 'postback', 
-						    'label' => 'Add to cart', 
-						    'data' => 'action=add&itemid=111' 
-						  ), 
-						  array ( 
-						    'type' => 'uri', 
-						    'label' => 'View detail', 
-						    'uri' => 'http://example.com/page/111' 
-						  ), 
-						), 
+						    'type' => 'message', 
+						    'label' => 'กดเลือกอาหารที่จะกิน', 
+						    'data' => 'เลือกประเภทอาหาร' 
+						  ),
 					      ), 
 					      array ( 
-						'thumbnailImageUrl' => 'https://example.com/bot/images/item2.jpg', 
-						'title' => 'this is menu', 
-						'text' => 'description', 
+						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2015/09/17/ba9b0a672fbf43b8b9d13d17fb2c1721.jpg', 
+						'title' => 'หมูกะทะ', 
+						'text' => '', 
 						'actions' =>  
-						array ( 
 						  array ( 
-						    'type' => 'postback', 
-						    'label' => 'Buy', 
-						    'data' => 'action=buy&itemid=222' 
-						  ),  
+						    'type' => 'message', 
+						    'label' => 'กดเลือกอาหารที่จะกิน', 
+						    'data' => 'เลือกประเภทอาหาร'
+						  ),
+					      ),
+					      array ( 
+						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/11/01/ddb28578db4d41b08ca94af7c85f8b8c.jpg', 
+						'title' => 'สเต็ก'
+						'text' => '', 
+						'actions' =>  
 						  array ( 
-						    'type' => 'postback', 
-						    'label' => 'Add to cart', 
-						    'data' => 'action=add&itemid=222' 
-						  ), 
+						    'type' => 'message', 
+						    'label' => 'กดเลือกอาหารที่จะกิน', 
+						    'data' => 'เลือกประเภทอาหาร'
+						  ),
+					      ),
+					      array ( 
+						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/09/20/8006bef53887403e9d27815ed15f6470.jpg', 
+						'title' => 'ส้มตำ', 
+						'text' => '', 
+						'actions' =>  
 						  array ( 
-						    'type' => 'uri', 
-						    'label' => 'View detail', 
-						    'uri' => 'http://example.com/page/222' 
-						  ), 
-						), 
-					      ), 
+						    'type' => 'message', 
+						    'label' => 'กดเลือกอาหารที่จะกิน', 
+						    'data' => 'เลือกประเภทอาหาร'
+						  ),
+					      ),
+					      array ( 
+						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/08/21/c25acd780f4649d499bf9d90502d7ada.jpg', 
+						'title' => 'อาหารญี่ปุ่น', 
+						'text' => '', 
+						'actions' =>  
+						  array ( 
+						    'type' => 'message', 
+						    'label' => 'กดเลือกอาหารที่จะกิน', 
+						    'data' => 'เลือกประเภทอาหาร'
+						  ),
+					      ),
 					    ), 
 					  ),
+				];
+			}
+			else if (strpos($text, 'ค้นหาร้าน') !== false)
+			{
+				
+			}
+			else if (strpos($text, 'โปรโมชัน') !== false || strpos($text, 'โปรโมชั่น') !== false || strpos(strtolower($text), 'promotion') !== false)
+			{
+				
+			}
+			else if (strpos($text, 'เลือกประเภทอาหาร') !== false)
+			{
+				
+			}
+			else if (strpos($text, 'สูตรอาหาร') !== false)
+			{
+				
+			}
+			else { 
+				$messages = [
+					  'type' => 'imagemap', 
+					  'baseUrl' => 'https://example.com/bot/images/rm001', 
+					  'altText' => 'this is an imagemap', 
+					  'baseSize' =>  
+					  array ( 
+					    'height' => 1040, 
+					    'width' => 1040, 
+					  ), 
+					  'actions' =>  
+					  array ( 
+					    0 =>  
+					    array ( 
+					      'type' => 'uri', 
+					      'linkUri' => 'https://example.com/', 
+					      'area' =>  
+					      array ( 
+						'x' => 0, 
+						'y' => 0, 
+						'width' => 520, 
+						'height' => 1040, 
+					      ), 
+					    ), 
+					    1 =>  
+					    array ( 
+					      'type' => 'message', 
+					      'text' => 'hello', 
+					      'area' =>  
+					      array ( 
+						'x' => 520, 
+						'y' => 0, 
+						'width' => 520, 
+						'height' => 1040, 
+					      ), 
+					    ), 
+					  )
 				];
 			}
 			// Make a POST Request to Messaging API to reply to sender
