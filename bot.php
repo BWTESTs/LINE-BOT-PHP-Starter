@@ -44,13 +44,11 @@ if (!is_null($events['events'])) {
 						'title' => 'ก๋วยเตี๋ยว', 
 						'text' => '', 
 						'actions' =>  
-						      array (
 							array (
 							    'type' => 'message', 
 							    'label' => 'กดเลือกอาหารที่จะกิน', 
 							    'data' => 'เลือกประเภทอาหาร' 
-					  	        ),
-						      ),
+							),
 					      ), 
 					      array ( 
 						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2015/09/17/ba9b0a672fbf43b8b9d13d17fb2c1721.jpg', 
@@ -58,12 +56,10 @@ if (!is_null($events['events'])) {
 						'text' => '', 
 						'actions' =>  
 						    array (
-							array (
 							    'type' => 'message', 
 							    'label' => 'กดเลือกอาหารที่จะกิน', 
 							    'data' => 'เลือกประเภทอาหาร' 
-					  	        ),
-						      ),
+							),
 					      ),
 					      array ( 
 						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/11/01/ddb28578db4d41b08ca94af7c85f8b8c.jpg', 
@@ -71,12 +67,10 @@ if (!is_null($events['events'])) {
 						'text' => '', 
 						'actions' =>  
 						    array (
-							array (
 							    'type' => 'message', 
 							    'label' => 'กดเลือกอาหารที่จะกิน', 
 							    'data' => 'เลือกประเภทอาหาร' 
-					  	        ),
-						      ),
+							),
 					      ),
 					      array ( 
 						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/09/20/8006bef53887403e9d27815ed15f6470.jpg', 
@@ -84,12 +78,10 @@ if (!is_null($events['events'])) {
 						'text' => '', 
 						'actions' =>  
 						    array (
-							array (
 							    'type' => 'message', 
 							    'label' => 'กดเลือกอาหารที่จะกิน', 
 							    'data' => 'เลือกประเภทอาหาร' 
-					  	        ),
-						      ),
+							),
 					      ),
 					      array ( 
 						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/08/21/c25acd780f4649d499bf9d90502d7ada.jpg', 
@@ -97,12 +89,10 @@ if (!is_null($events['events'])) {
 						'text' => '', 
 						'actions' =>  
 						    array (
-							array (
 							    'type' => 'message', 
 							    'label' => 'กดเลือกอาหารที่จะกิน', 
 							    'data' => 'เลือกประเภทอาหาร' 
-					  	        ),
-						      ),
+							),
 					      ),
 					    ), 
 					  ),
@@ -136,7 +126,6 @@ if (!is_null($events['events'])) {
 					  ), 
 					  'actions' =>  
 					  array ( 
-					    0 =>  
 					    array ( 
 					      'type' => 'uri', 
 					      'linkUri' => 'https://example.com/', 
@@ -145,10 +134,9 @@ if (!is_null($events['events'])) {
 						'x' => 0, 
 						'y' => 0, 
 						'width' => 520, 
-						'height' => 1040, 
+						'height' => 1040 
 					      ), 
 					    ), 
-					    1 =>  
 					    array ( 
 					      'type' => 'message', 
 					      'text' => 'hello', 
@@ -157,10 +145,10 @@ if (!is_null($events['events'])) {
 						'x' => 520, 
 						'y' => 0, 
 						'width' => 520, 
-						'height' => 1040, 
+						'height' => 1040 
 					      ), 
 					    ), 
-					  )
+					  ),
 				];
 			}
 			// Make a POST Request to Messaging API to reply to sender
