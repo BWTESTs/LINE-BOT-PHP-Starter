@@ -25,9 +25,30 @@ if (!is_null($events['events'])) {
 			}
 			else { 
 				$messages = [
-					'type' => 'sticker', 
-					   'packageId' => '1', 
-					   'stickerId' => '1'
+					array ( 
+					  'type' => 'template', 
+					  'altText' => 'this is a confirm template', 
+					  'template' =>  
+					  array ( 
+					    'type' => 'confirm', 
+					    'text' => 'Are you sure?', 
+					    'actions' =>  
+					    array ( 
+					      0 =>  
+					      array ( 
+						'type' => 'message', 
+						'label' => 'Yes', 
+						'text' => 'yes', 
+					      ), 
+					      1 =>  
+					      array ( 
+						'type' => 'message', 
+						'label' => 'No', 
+						'text' => 'no', 
+					      ), 
+					    ), 
+					  ), 
+					)
 				];
 			}
 			// Make a POST Request to Messaging API to reply to sender
