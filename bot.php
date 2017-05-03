@@ -30,7 +30,10 @@ if (!is_null($events['events'])) {
 				];
 			}
 			else { 
-				$textS = 'งง...';
+				$messages = [
+					'type' => 'text',
+					'text' => 'งง...'
+				];
 			}
 			
 			// Make a POST Request to Messaging API to reply to sender
