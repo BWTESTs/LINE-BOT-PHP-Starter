@@ -25,50 +25,37 @@ if (!is_null($events['events'])) {
 			}
 			else { 
 				$messages = [
-					'type' => 'template',
-					'altText' => 'this is a carousel template',
-					'template' => [
-						'type' => 'carousel',
-						'columns' => [
-							'thumbnailImageUrl' => 'https://example.com/bot/images/item1.jpg',
-							'title' => 'this is menu',
-							'text' => 'description',
-							'actions' => [
-								'type' => 'postback',
-								'label' => 'Buy',
-								'data' => 'action=buy&itemid=111'
-							]
-						]
-					]
+					stdClass::__set_state(array( 
+					   'type' => 'template', 
+					   'altText' => 'this is a confirm template', 
+					   'template' =>  
+					  stdClass::__set_state(array( 
+					     'type' => 'confirm', 
+					     'text' => 'Are you sure?', 
+					     'actions' =>  
+					    array ( 
+					      0 =>  
+					      stdClass::__set_state(array( 
+						 'type' => 'message', 
+						 'label' => 'Yes', 
+						 'text' => 'yes', 
+					      )), 
+					      1 =>  
+					      stdClass::__set_state(array( 
+						 'type' => 'message', 
+						 'label' => 'No', 
+						 'text' => 'no', 
+					      )), 
+					    ), 
+					  )), 
+					))
 				];
 			}
-			$post1 = { 
-			  "type": "template", 
-			  "altText": "this is a confirm template", 
-			  "template": { 
-			      "type": "confirm", 
-			      "text": "Are you sure?", 
-			      "actions": [ 
-				  { 
-				    "type": "message", 
-				    "label": "Yes", 
-				    "text": "yes" 
-				  }, 
-				  { 
-				    "type": "message", 
-				    "label": "No", 
-				    "text": "no" 
-				  } 
-			      ] 
-			  } 
-			};
-			$messages = json_decode($post1, true);
-			
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
 				'replyToken' => $replyToken,
-				'messages' => [$post1],
+				'messages' => [$messages],
 			];
 			$post = json_encode($data);
 			
