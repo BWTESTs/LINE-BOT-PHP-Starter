@@ -25,7 +25,6 @@ if (!is_null($events['events'])) {
 			}
 			else { 
 				$messages = [
-					array ( 
 					  'type' => 'template', 
 					  'altText' => 'this is a confirm template', 
 					  'template' =>  
@@ -37,16 +36,16 @@ if (!is_null($events['events'])) {
 					      array ( 
 						'type' => 'message', 
 						'label' => 'Yes', 
-						'text' => 'yes', 
+						'text' => 'yes' 
 					      ),  
 					      array ( 
 						'type' => 'message', 
 						'label' => 'No', 
-						'text' => 'no', 
+						'text' => 'no' 
 					      ), 
 					    ), 
 					  ), 
-					)
+					
 				];
 			}
 			// Make a POST Request to Messaging API to reply to sender
