@@ -30,6 +30,12 @@ if (!is_null($events['events'])) {
 				];
 			}
 			else if (strpos($text, 'แนะนำ') !== false) {
+				$messages = [
+					'type' => 'text',
+					'text' => 'อยากกินอาหารประเภทไหน'
+				];
+			}
+			else if (strpos($text, 'มีอะไรให้เลือก') !== false) {
 				// Build message to reply back
 				$messages = [
 					  'type' => 'template', 
@@ -421,6 +427,110 @@ if (!is_null($events['events'])) {
 							    'type' => 'uri', 
 							    'label' => 'View detail',
 							    'uri' => 'https://www.wongnai.com/reviews/2b725afae2d7444eb93bd79045ff8b19',
+							  ),
+							  array ( 
+							    'type' => 'postback', 
+							    'label' => 'Tel:0xx-xxx-xxxx', 
+							    'data' => 'action=add&itemid=111',
+							  ),
+						  ),
+					      ),
+					    ), 
+					  ),
+				];
+			}
+			else if (strpos($text, 'ส้มตำ') !== false)
+			{
+				$messages = [
+					  'type' => 'template', 
+					  'altText' => 'this is a carousel template', 
+					  'template' =>  
+					  array ( 
+					    'type' => 'carousel', 
+					    'columns' =>  
+					    array ( 
+					      array ( 
+						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/09/20/8006bef53887403e9d27815ed15f6470.jpg', 
+						'title' => 'ร้าน ไก่ทอดเจ๊กี (ส้มตำโปโล)', 
+						'text' => 'description', 
+						'actions' =>  
+						  array ( 
+							  array ( 
+							    'type' => 'uri', 
+							    'label' => 'View detail',
+							    'uri' => 'https://www.wongnai.com/reviews/7ca91f1f976a4997a91db0b659c2d5bd',
+							  ),
+							  array ( 
+							    'type' => 'postback', 
+							    'label' => 'Tel:0xx-xxx-xxxx', 
+							    'data' => 'action=add&itemid=111',
+							  ),
+						  ),
+					      ), 
+					      array ( 
+						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2014/10/11/d2071a33561c4a65a8fe3d476c8541ad.jpg', 
+						'title' => 'ร้าน แซ่บวัน รัชดา' 
+						'text' => 'description', 
+						'actions' =>  
+						array ( 
+						    	  array ( 
+							    'type' => 'uri', 
+							    'label' => 'View detail',
+							    'uri' => 'https://www.wongnai.com/reviews/f91f13c8cb3d43febcf9b95502e15b90',
+							  ),
+							  array ( 
+							    'type' => 'postback', 
+							    'label' => 'Tel:0xx-xxx-xxxx', 
+							    'data' => 'action=add&itemid=111',
+							  ),
+						  ),
+					      ),
+					      array ( 
+						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2015/08/28/17b446dada4e4b0599b35b2167d90237.jpg', 
+						'title' => 'ร้าน ส้มตำนัว', 
+						'text' => 'description', 
+						'actions' =>  
+						array ( 
+						    	  array ( 
+							    'type' => 'uri', 
+							    'label' => 'View detail',
+							    'uri' => 'https://www.wongnai.com/reviews/05603d626b474ebf898646b59931a89e',
+							  ),
+							  array ( 
+							    'type' => 'postback', 
+							    'label' => 'Tel:0xx-xxx-xxxx', 
+							    'data' => 'action=add&itemid=111',
+							  ),
+						  ),
+					      ),
+					      array ( 
+						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/11/02/a33510c319484f78bedd0379234d0f63.jpg', 
+						'title' => 'ร้าน ส้มตำเจ๊แดง', 
+						'text' => 'description', 
+						'actions' =>  
+						array ( 
+						    	  array ( 
+							    'type' => 'uri', 
+							    'label' => 'View detail',
+							    'uri' => 'https://www.wongnai.com/reviews/9d06defdae3e449ab46760ed2b041f53',
+							  ),
+							  array ( 
+							    'type' => 'postback', 
+							    'label' => 'Tel:0xx-xxx-xxxx', 
+							    'data' => 'action=add&itemid=111',
+							  ),
+						  ),
+					      ),
+					      array ( 
+						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2010/12/16/ff8080812ceed075012cefcba36a0034.jpg', 
+						'title' => 'ร้าน ยอดลาบเป็ดอุดร', 
+						'text' => 'description', 
+						'actions' =>  
+						array ( 
+						    	  array ( 
+							    'type' => 'uri', 
+							    'label' => 'View detail',
+							    'uri' => 'https://www.wongnai.com/reviews/7e1fb66eb9e84beca6fe3b9662f5387d',
 							  ),
 							  array ( 
 							    'type' => 'postback', 
