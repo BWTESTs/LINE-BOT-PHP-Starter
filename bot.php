@@ -44,9 +44,9 @@ if (!is_null($events['events'])) {
 						'type' => 'message', 
 						'label' => 'No', 
 						'text' => 'no', 
-					      ), 
-					    ), 
-					  ),
+					      ) 
+					    ) 
+					  )
 				];
 			}
 			// Make a POST Request to Messaging API to reply to sender
