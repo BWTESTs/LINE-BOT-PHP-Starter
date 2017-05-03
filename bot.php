@@ -30,6 +30,12 @@ if (!is_null($events['events'])) {
 				];
 			}
 			else if (strpos($text, 'มีอะไรให้เลือก') !== false) {
+				$messages = [
+					'type' => 'text',
+					'text' => 'อยากกินอาหารประเภทไหน'
+				];
+			}
+			else if (strpos($text, 'มีอะไรให้เลือก') !== false) {
 				// Build message to reply back
 				$messages = [
 					  'type' => 'template', 
@@ -463,7 +469,7 @@ if (!is_null($events['events'])) {
 					      ), 
 					      array ( 
 						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2014/10/11/d2071a33561c4a65a8fe3d476c8541ad.jpg', 
-						'title' => 'ร้าน แซ่บวัน รัชดา' 
+						'title' => 'ร้าน แซ่บวัน รัชดา', 
 						'text' => 'description', 
 						'actions' =>  
 						array ( 
