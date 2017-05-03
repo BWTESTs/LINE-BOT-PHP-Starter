@@ -25,10 +25,9 @@ if (!is_null($events['events'])) {
 			}
 			else { 
 				$messages = [
-					stdClass::__set_state(array( 
-					   'type' => 'text', 
-					   'text' => 'Hello, world (star)', 
-					))
+					'type' => 'image', 
+				   'originalContentUrl' => 'https://example.com/original.jpg', 
+				   'previewImageUrl' => 'https://example.com/preview.jpg',
 				];
 			}
 			// Make a POST Request to Messaging API to reply to sender
