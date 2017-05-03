@@ -19,10 +19,8 @@ if (!is_null($events['events'])) {
 			if (strpos($text, 'สเต็ก') !== false) {
 				// Build message to reply back
 				$messages = [
-					{
-						'type' => 'text',
-						'text' => '1.ร้านสเต็ก...'
-					}
+					'type' => 'text',
+					'text' => '1.ร้านสเต็ก...'
 				];
 			}
 			else { 
