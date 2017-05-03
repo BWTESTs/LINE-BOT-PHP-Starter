@@ -27,7 +27,7 @@ if (!is_null($events['events'])) {
 				$messages = [
 					'type' => 'image', 
 					'originalContentUrl' => 'http://wallpaper-gallery.net/images/picture/picture-14.jpg', 
-					'previewImageUrl' => 'http://cdn.newsapi.com.au/image/v1/a959d7242a67b2682136cec3cad538dd'
+					'previewImageUrl' => 'http://wallpaper-gallery.net/images/picture/picture-14.jpg'
 				];
 			}
 			// Make a POST Request to Messaging API to reply to sender
