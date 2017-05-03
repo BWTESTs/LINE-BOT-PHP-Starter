@@ -25,28 +25,9 @@ if (!is_null($events['events'])) {
 			}
 			else { 
 				$messages = [
-					'type' => 'template', 
-					   'altText' => 'this is a confirm template', 
-					   'template' =>  
-					  stdClass::__set_state(array( 
-					     'type' => 'confirm', 
-					     'text' => 'Are you sure?', 
-					     'actions' =>  
-					    array ( 
-					      0 =>  
-					      stdClass::__set_state(array( 
-						 'type' => 'message', 
-						 'label' => 'Yes', 
-						 'text' => 'yes', 
-					      )), 
-					      1 =>  
-					      stdClass::__set_state(array( 
-						 'type' => 'message', 
-						 'label' => 'No', 
-						 'text' => 'no', 
-					      )), 
-					    ), 
-					  ))
+					'type' => 'sticker', 
+					   'packageId' => '1', 
+					   'stickerId' => '1',
 				];
 			}
 			// Make a POST Request to Messaging API to reply to sender
