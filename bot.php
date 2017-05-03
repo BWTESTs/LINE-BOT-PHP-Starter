@@ -34,21 +34,9 @@ if (!is_null($events['events'])) {
 							'title' => 'this is menu',
 							'text' => 'description',
 							'actions' => [
-								{
-									'type' => 'postback',
-									'label' => 'Buy',
-									'data' => 'action=buy&itemid=111'
-								},
-								{ 
-								    	'type' => 'postback', 
-								    	'label' => 'Add to cart', 
-								    	'data' => 'action=add&itemid=111' 
-								}, 
-								{ 
-								    	'type' => 'uri', 
-								    	'label' => 'View detail', 
-								   	'uri' => 'http://example.com/page/111' 
-								}
+								'type' => 'postback',
+								'label' => 'Buy',
+								'data' => 'action=buy&itemid=111'
 							]
 						]
 					]
@@ -61,7 +49,27 @@ if (!is_null($events['events'])) {
 				'replyToken' => $replyToken,
 				'messages' => [$messages],
 			];
-			$post = json_encode($data);
+			//$post = json_encode($data);
+			$post = { 
+			  "type": "template", 
+			  "altText": "this is a confirm template", 
+			  "template": { 
+			      "type": "confirm", 
+			      "text": "Are you sure?", 
+			      "actions": [ 
+				  { 
+				    "type": "message", 
+				    "label": "Yes", 
+				    "text": "yes" 
+				  }, 
+				  { 
+				    "type": "message", 
+				    "label": "No", 
+				    "text": "no" 
+				  } 
+			      ] 
+			  } 
+			};
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
 
 			$ch = curl_init($url);
