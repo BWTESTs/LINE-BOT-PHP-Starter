@@ -46,9 +46,9 @@ if (!is_null($events['events'])) {
 						'actions' =>  
 						array ( 
 						  array ( 
-						    'type' => 'postback', 
-						    'label' => 'Buy', 
-						    'data' => 'action=buy&itemid=111', 
+						    'type' => 'message', 
+						    'label' => 'เลือกประเภทอาหารที่จะกิน', 
+						    'data' => 'ก๋วยเตี๋ยว', 
 						  ), 
 						  array ( 
 						    'type' => 'postback', 
