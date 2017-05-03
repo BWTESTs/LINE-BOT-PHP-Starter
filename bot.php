@@ -29,12 +29,6 @@ if (!is_null($events['events'])) {
 					6.ค้นหาโปรโมชั่น'
 				];
 			}
-			else if (strpos($text, 'แนะนำ') !== false) {
-				$messages = [
-					'type' => 'text',
-					'text' => 'อยากกินอาหารประเภทไหน'
-				];
-			}
 			else if (strpos($text, 'มีอะไรให้เลือก') !== false) {
 				// Build message to reply back
 				$messages = [
