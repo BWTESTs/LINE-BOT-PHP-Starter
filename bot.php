@@ -41,27 +41,27 @@ if (!is_null($events['events'])) {
 					    array ( 
 					      array ( 
 						'thumbnailImageUrl' => 'https://example.com/bot/images/item1.jpg', 
-						'title' => 'this is menu', 
+						'title' => 'ก๋วยเตี๋ยว', 
 						'text' => 'description', 
 						'actions' =>  
 						  array ( 
 							  array ( 
-							    'type' => 'postback', 
-							    'label' => 'Add to cart', 
-							    'data' => 'action=add&itemid=111', 
+							    'type' => 'message', 
+							    'label' => 'กดเลือกประเภทอาหารที่จะกิน', 
+							    'data' => 'ก๋วยเตี๋ยว', 
 							  ),
 						  ),
 					      ), 
 					      array ( 
 						'thumbnailImageUrl' => 'https://example.com/bot/images/item2.jpg', 
-						'title' => 'this is menu', 
+						'title' => 'สเต็ก', 
 						'text' => 'description', 
 						'actions' =>  
 						array ( 
 						    array ( 
-							    'type' => 'postback', 
-							    'label' => 'Add to cart', 
-							    'data' => 'action=add&itemid=111', 
+							    'type' => 'message', 
+							    'label' => 'กดเลือกประเภทอาหารที่จะกิน', 
+							    'data' => 'สเต็ก',  
 							  ),
 						  ),
 					      ), 
