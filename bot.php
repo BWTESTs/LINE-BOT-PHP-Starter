@@ -27,19 +27,19 @@ if (!is_null($events['events'])) {
 				$messages = [
 					for my $i (1..5) { 
 					    my $column = LINE::Bot::API::Builder::TemplateMessage::Column->new( 
-						image_url => 'https://example.com/bot/images/item.jpg', 
-						title     => "carousel $i", 
-						text      => "description $i", 
+						'image_url' => 'https://example.com/bot/images/item.jpg', 
+						'title'     => 'carousel $i', 
+						'text'      => 'description $i', 
 					    )->add_postback_action( 
-						label => 'postback', 
-						data  => 'postback data', 
-						text  => 'postback message', 
+						'label' => 'postback', 
+						'data'  => 'postback data', 
+						'text'  => 'postback message', 
 					    )->add_message_action( 
-						label => 'message', 
-						text  => 'message', 
+						'label' => 'message', 
+						'text'  => 'message', 
 					    )->add_uri_action( 
-						label => 'uri', 
-						uri   => 'http://example.com/', 
+						'label' => 'uri', 
+						'uri'   => 'http://example.com/', 
 					    ); 
 					    $carousel->add_column($column->build); 
 					}
