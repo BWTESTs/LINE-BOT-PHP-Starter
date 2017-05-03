@@ -26,28 +26,9 @@ if (!is_null($events['events'])) {
 			else { 
 				$messages = [
 					stdClass::__set_state(array( 
-					   'type' => 'template', 
-					   'altText' => 'this is a confirm template', 
-					   'template' =>  
-					  stdClass::__set_state(array( 
-					     'type' => 'confirm', 
-					     'text' => 'Are you sure?', 
-					     'actions' =>  
-					    array ( 
-					      0 =>  
-					      stdClass::__set_state(array( 
-						 'type' => 'message', 
-						 'label' => 'Yes', 
-						 'text' => 'yes', 
-					      )), 
-					      1 =>  
-					      stdClass::__set_state(array( 
-						 'type' => 'message', 
-						 'label' => 'No', 
-						 'text' => 'no', 
-					      )), 
-					    ), 
-					  )), 
+					   'type' => 'image', 
+					   'originalContentUrl' => 'https://example.com/original.jpg', 
+					   'previewImageUrl' => 'https://example.com/preview.jpg', 
 					))
 				];
 			}
