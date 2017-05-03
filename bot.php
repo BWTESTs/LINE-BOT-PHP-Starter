@@ -18,9 +18,35 @@ if (!is_null($events['events'])) {
 
 			if (strpos($text, 'สเต็ก') !== false) {
 				// Build message to reply back
+				//$messages = [
+				//	'type' => 'text',
+				//	'text' => 'ร้านสเต็ก...'
+				//];
 				$messages = [
-					'type' => 'text',
-					'text' => 'ร้านสเต็ก...'
+					stdClass::__set_state(array( 
+					   'type' => 'template', 
+					   'altText' => 'this is a confirm template', 
+					   'template' =>  
+					  stdClass::__set_state(array( 
+					     'type' => 'confirm', 
+					     'text' => 'Are you sure?', 
+					     'actions' =>  
+					    array ( 
+					      0 =>  
+					      stdClass::__set_state(array( 
+						 'type' => 'message', 
+						 'label' => 'Yes', 
+						 'text' => 'yes', 
+					      )), 
+					      1 =>  
+					      stdClass::__set_state(array( 
+						 'type' => 'message', 
+						 'label' => 'No', 
+						 'text' => 'no', 
+					      )), 
+					    ), 
+					  )), 
+					))
 				];
 			}
 			else { 
