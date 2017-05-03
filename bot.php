@@ -26,8 +26,8 @@ if (!is_null($events['events'])) {
 			else { 
 				$messages = [
 					'type' => 'image', 
-					'originalContentUrl' => 'https://www.google.co.th/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiskZyb-tLTAhXJpY8KHfNLCEQQjRwIBw&url=http%3A%2F%2Fwallpaper-gallery.net%2Fwallpapers%2Fpicture.html&psig=AFQjCNFDoENIepDEiS_-OSYAxcSVwRotTQ&ust=1493874461269393', 
-					'previewImageUrl' => 'https://www.google.co.th/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjt9eWo-tLTAhXJLI8KHeLOC-MQjRwIBw&url=%2Furl%3Fsa%3Di%26rct%3Dj%26q%3D%26esrc%3Ds%26source%3Dimages%26cd%3D%26cad%3Drja%26uact%3D8%26ved%3D%26url%3Dhttp%253A%252F%252Fwww.news.com.au%252Ftechnology%252Fscience%252Fanimals%252Fseal-pup-allows-photographer-rare-close-up%252Fnews-story%252Fb90f6bbeb759e985fbed067ca40dc18f%26psig%3DAFQjCNFDoENIepDEiS_-OSYAxcSVwRotTQ%26ust%3D1493874461269393&psig=AFQjCNFDoENIepDEiS_-OSYAxcSVwRotTQ&ust=1493874461269393'
+					'originalContentUrl' => 'http://wallpaper-gallery.net/images/picture/picture-14.jpg', 
+					'previewImageUrl' => 'http://cdn.newsapi.com.au/image/v1/a959d7242a67b2682136cec3cad538dd'
 				];
 			}
 			// Make a POST Request to Messaging API to reply to sender
