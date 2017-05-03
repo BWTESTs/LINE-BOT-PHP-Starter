@@ -48,7 +48,7 @@ if (!is_null($events['events'])) {
 					      )), 
 					    ), 
 					  )), 
-					));
+					))
 				];
 			}
 			// Make a POST Request to Messaging API to reply to sender
