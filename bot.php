@@ -40,7 +40,7 @@ if (!is_null($events['events'])) {
 					    'columns' =>  
 					    array ( 
 					      array ( 
-						'thumbnailImageUrl' => 'https://example.com/bot/images/item1.jpg', 
+						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/02/22/cac93497800a43aabd8b7feae8053ed7.jpg', 
 						'title' => 'ก๋วยเตี๋ยว', 
 						'text' => 'description', 
 						'actions' =>  
@@ -54,7 +54,7 @@ if (!is_null($events['events'])) {
 						  ),
 					      ), 
 					      array ( 
-						'thumbnailImageUrl' => 'https://example.com/bot/images/item2.jpg', 
+						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/11/01/ddb28578db4d41b08ca94af7c85f8b8c.jpg', 
 						'title' => 'สเต็ก', 
 						'text' => 'description', 
 						'actions' =>  
