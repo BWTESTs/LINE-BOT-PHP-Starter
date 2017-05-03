@@ -29,7 +29,7 @@ if (!is_null($events['events'])) {
 					6.ค้นหาโปรโมชั่น'
 				];
 			}
-			else if (strpos($text, 'มีอะไรให้เลือก') !== false) {
+			else if (strpos($text, 'แนะนำ') !== false) {
 				$messages = [
 					'type' => 'text',
 					'text' => 'อยากกินอาหารประเภทไหน'
