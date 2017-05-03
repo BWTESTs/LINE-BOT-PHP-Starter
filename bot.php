@@ -46,7 +46,7 @@ if (!is_null($events['events'])) {
 						'actions' =>  
 						  array ( 
 							  array ( 
-							    'type' => 'message', 
+							    'type' => 'postback', 
 							    'label' => 'กดเลือกประเภทอาหารที่จะกิน', 
 							    'data' => 'ก๋วยเตี๋ยว', 
 							  ),
@@ -59,7 +59,7 @@ if (!is_null($events['events'])) {
 						'actions' =>  
 						array ( 
 						    array ( 
-							    'type' => 'message', 
+							    'type' => 'postback', 
 							    'label' => 'กดเลือกประเภทอาหารที่จะกิน', 
 							    'data' => 'สเต็ก',  
 							  ),
