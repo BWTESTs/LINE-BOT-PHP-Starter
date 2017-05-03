@@ -132,7 +132,40 @@ if (!is_null($events['events'])) {
 			else { 
 				$messages = [
 					  'type' => 'imagemap', 
-					  'text' => 'a'
+					  'baseUrl' => 'https://example.com/bot/images/rm001', 
+					  'altText' => 'this is an imagemap', 
+					  'baseSize' =>  
+					  array ( 
+					    'height' => 1040, 
+					    'width' => 1040, 
+					  ), 
+					  'actions' =>  
+					  array ( 
+					    0 =>  
+					    array ( 
+					      'type' => 'uri', 
+					      'linkUri' => 'https://example.com/', 
+					      'area' =>  
+					      array ( 
+						'x' => 0, 
+						'y' => 0, 
+						'width' => 520, 
+						'height' => 1040, 
+					      ), 
+					    ), 
+					    1 =>  
+					    array ( 
+					      'type' => 'message', 
+					      'text' => 'hello', 
+					      'area' =>  
+					      array ( 
+						'x' => 520, 
+						'y' => 0, 
+						'width' => 520, 
+						'height' => 1040, 
+					      ), 
+					    ), 
+					  )
 				];
 			}
 			// Make a POST Request to Messaging API to reply to sender
