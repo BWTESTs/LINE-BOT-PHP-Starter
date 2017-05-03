@@ -56,22 +56,10 @@ if (!is_null($events['events'])) {
 						'text' => 'description', 
 						'actions' =>  
 						array ( 
-						  array ( 
-						    'type' => 'postback', 
-						    'label' => 'Buy', 
-						    'data' => 'action=buy&itemid=222', 
-						  ), 
-						  array ( 
 						    'type' => 'postback', 
 						    'label' => 'Add to cart', 
-						    'data' => 'action=add&itemid=222', 
-						  ),  
-						  array ( 
-						    'type' => 'uri', 
-						    'label' => 'View detail', 
-						    'uri' => 'http://example.com/page/222', 
-						  ), 
-						), 
+						    'data' => 'action=add&itemid=111', 
+						  ),
 					      ), 
 					    ), 
 					  ), 
