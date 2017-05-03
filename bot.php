@@ -16,7 +16,7 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
-			if (strpos($text, 'help') !== false || strpos($text, 'หาอะไรได้บ้าง') !== false) {
+			if (strpos($text, 'help') !== false) {
 				// Build message to reply back
 				$messages = [
 					'type' => 'text',
