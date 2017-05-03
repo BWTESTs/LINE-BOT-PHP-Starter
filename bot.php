@@ -45,9 +45,11 @@ if (!is_null($events['events'])) {
 						'text' => 'description', 
 						'actions' =>  
 						  array ( 
-						    'type' => 'postback', 
-						    'label' => 'Add to cart', 
-						    'data' => 'action=add&itemid=111', 
+							  array ( 
+							    'type' => 'postback', 
+							    'label' => 'Add to cart', 
+							    'data' => 'action=add&itemid=111', 
+							  ),
 						  ),
 					      ), 
 					      array ( 
@@ -56,9 +58,11 @@ if (!is_null($events['events'])) {
 						'text' => 'description', 
 						'actions' =>  
 						array ( 
-						    'type' => 'postback', 
-						    'label' => 'Add to cart', 
-						    'data' => 'action=add&itemid=111', 
+						    array ( 
+							    'type' => 'postback', 
+							    'label' => 'Add to cart', 
+							    'data' => 'action=add&itemid=111', 
+							  ),
 						  ),
 					      ), 
 					    ), 
