@@ -44,10 +44,22 @@ if (!is_null($events['events'])) {
 						'title' => 'ก๋วยเตี๋ยว', 
 						'text' => '', 
 						'actions' =>  
-							array (
-							    'type' => 'message', 
-							    'label' => 'กดเลือกอาหารที่จะกิน', 
-							    'data' => 'เลือกประเภทอาหาร' 
+							array ( 
+							  array ( 
+							    'type' => 'postback', 
+							    'label' => 'Buy', 
+							    'data' => 'action=buy&itemid=111', 
+							  ),  
+							  array ( 
+							    'type' => 'postback', 
+							    'label' => 'Add to cart', 
+							    'data' => 'action=add&itemid=111', 
+							  ), 
+							  array ( 
+							    'type' => 'uri', 
+							    'label' => 'View detail', 
+							    'uri' => 'http://example.com/page/111', 
+							  ),
 							),
 					      ), 
 					      array ( 
@@ -55,10 +67,22 @@ if (!is_null($events['events'])) {
 						'title' => 'หมูกะทะ', 
 						'text' => '', 
 						'actions' =>  
-						    array (
-							    'type' => 'message', 
-							    'label' => 'กดเลือกอาหารที่จะกิน', 
-							    'data' => 'เลือกประเภทอาหาร' 
+						    array ( 
+							  array ( 
+							    'type' => 'postback', 
+							    'label' => 'Buy', 
+							    'data' => 'action=buy&itemid=111', 
+							  ),  
+							  array ( 
+							    'type' => 'postback', 
+							    'label' => 'Add to cart', 
+							    'data' => 'action=add&itemid=111', 
+							  ), 
+							  array ( 
+							    'type' => 'uri', 
+							    'label' => 'View detail', 
+							    'uri' => 'http://example.com/page/111', 
+							  ),
 							),
 					      ),
 					      array ( 
@@ -66,10 +90,22 @@ if (!is_null($events['events'])) {
 						'title' => 'สเต็ก'
 						'text' => '', 
 						'actions' =>  
-						    array (
-							    'type' => 'message', 
-							    'label' => 'กดเลือกอาหารที่จะกิน', 
-							    'data' => 'เลือกประเภทอาหาร' 
+						    array ( 
+							  array ( 
+							    'type' => 'postback', 
+							    'label' => 'Buy', 
+							    'data' => 'action=buy&itemid=111', 
+							  ),  
+							  array ( 
+							    'type' => 'postback', 
+							    'label' => 'Add to cart', 
+							    'data' => 'action=add&itemid=111', 
+							  ), 
+							  array ( 
+							    'type' => 'uri', 
+							    'label' => 'View detail', 
+							    'uri' => 'http://example.com/page/111', 
+							  ),
 							),
 					      ),
 					      array ( 
@@ -77,10 +113,22 @@ if (!is_null($events['events'])) {
 						'title' => 'ส้มตำ', 
 						'text' => '', 
 						'actions' =>  
-						    array (
-							    'type' => 'message', 
-							    'label' => 'กดเลือกอาหารที่จะกิน', 
-							    'data' => 'เลือกประเภทอาหาร' 
+						    array ( 
+							  array ( 
+							    'type' => 'postback', 
+							    'label' => 'Buy', 
+							    'data' => 'action=buy&itemid=111', 
+							  ),  
+							  array ( 
+							    'type' => 'postback', 
+							    'label' => 'Add to cart', 
+							    'data' => 'action=add&itemid=111', 
+							  ), 
+							  array ( 
+							    'type' => 'uri', 
+							    'label' => 'View detail', 
+							    'uri' => 'http://example.com/page/111', 
+							  ),
 							),
 					      ),
 					      array ( 
@@ -88,10 +136,22 @@ if (!is_null($events['events'])) {
 						'title' => 'อาหารญี่ปุ่น', 
 						'text' => '', 
 						'actions' =>  
-						    array (
-							    'type' => 'message', 
-							    'label' => 'กดเลือกอาหารที่จะกิน', 
-							    'data' => 'เลือกประเภทอาหาร' 
+						    array ( 
+							  array ( 
+							    'type' => 'postback', 
+							    'label' => 'Buy', 
+							    'data' => 'action=buy&itemid=111', 
+							  ),  
+							  array ( 
+							    'type' => 'postback', 
+							    'label' => 'Add to cart', 
+							    'data' => 'action=add&itemid=111', 
+							  ), 
+							  array ( 
+							    'type' => 'uri', 
+							    'label' => 'View detail', 
+							    'uri' => 'http://example.com/page/111', 
+							  ),
 							),
 					      ),
 					    ), 
