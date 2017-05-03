@@ -27,7 +27,19 @@ if (!is_null($events['events'])) {
 				$messages = [
 					'type' => 'template',
 					'altText' => 'this is a carousel template',
-					'template' => {}
+					'template' = [
+						'type' => 'carousel',
+						'columns' = [
+							'thumbnailImageUrl' => 'https://example.com/bot/images/item1.jpg',
+							'title' => 'this is menu',
+							'text' => 'description',
+							'actions' = [
+								'type' => 'postback',
+								'label' => 'Buy',
+								'data' => 'action=buy&itemid=111'
+							]
+						]
+					]
 				];
 			}
 			
