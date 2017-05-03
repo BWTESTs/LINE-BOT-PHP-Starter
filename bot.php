@@ -22,10 +22,6 @@ if (!is_null($events['events'])) {
 					{
 						'type' => 'text',
 						'text' => '1.ร้านสเต็ก...'
-					},
-					{
-						'type' => 'text',
-						'text' => '2.ร้านสเต็ก...'
 					}
 				];
 			}
