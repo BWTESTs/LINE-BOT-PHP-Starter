@@ -43,14 +43,12 @@ if (!is_null($events['events'])) {
 						'thumbnailImageUrl' => 'https://example.com/bot/images/item1.jpg', 
 						'title' => 'this is menu', 
 						'text' => 'description', 
-						'actions' =>  
-						array ( 
+						'action' =>  
 						  array ( 
 						    'type' => 'postback', 
 						    'label' => 'Add to cart', 
 						    'data' => 'action=add&itemid=111', 
 						  ),
-						), 
 					      ), 
 					      array ( 
 						'thumbnailImageUrl' => 'https://example.com/bot/images/item2.jpg', 
