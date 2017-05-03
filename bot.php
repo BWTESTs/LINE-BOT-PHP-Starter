@@ -26,27 +26,27 @@ if (!is_null($events['events'])) {
 			else { 
 				$messages = [
 					'type' => 'template', 
-					  'altText' => 'this is a confirm template', 
-					  'template' =>  
-					  ( 
-					    'type' => 'confirm', 
-					    'text' => 'Are you sure?', 
-					    'actions' =>  
-					    ( 
+					   'altText' => 'this is a confirm template', 
+					   'template' =>  
+					  stdClass::__set_state(array( 
+					     'type' => 'confirm', 
+					     'text' => 'Are you sure?', 
+					     'actions' =>  
+					    array ( 
 					      0 =>  
-					      ( 
-						'type' => 'message', 
-						'label' => 'Yes', 
-						'text' => 'yes', 
-					      ), 
+					      stdClass::__set_state(array( 
+						 'type' => 'message', 
+						 'label' => 'Yes', 
+						 'text' => 'yes', 
+					      )), 
 					      1 =>  
-					      ( 
-						'type' => 'message', 
-						'label' => 'No', 
-						'text' => 'no', 
-					      ) 
-					    ) 
-					  )
+					      stdClass::__set_state(array( 
+						 'type' => 'message', 
+						 'label' => 'No', 
+						 'text' => 'no', 
+					      )), 
+					    ), 
+					  ))
 				];
 			}
 			// Make a POST Request to Messaging API to reply to sender
