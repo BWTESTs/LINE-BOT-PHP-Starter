@@ -34,13 +34,11 @@ if (!is_null($events['events'])) {
 					    'text' => 'Are you sure?', 
 					    'actions' =>  
 					    array ( 
-					      0 =>  
 					      array ( 
 						'type' => 'message', 
 						'label' => 'Yes', 
 						'text' => 'yes', 
-					      ), 
-					      1 =>  
+					      ),  
 					      array ( 
 						'type' => 'message', 
 						'label' => 'No', 
