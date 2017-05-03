@@ -18,63 +18,78 @@ if (!is_null($events['events'])) {
 
 			if (strpos($text, 'สเต็ก') !== false) {
 				// Build message to reply back
-				//$messages = [
-				//	'type' => 'text',
-				//	'text' => 'ร้านสเต็ก...'
-				//];
 				$messages = [
-					stdClass::__set_state(array( 
-					   'type' => 'template', 
-					   'altText' => 'this is a confirm template', 
-					   'template' =>  
-					  stdClass::__set_state(array( 
-					     'type' => 'confirm', 
-					     'text' => 'Are you sure?', 
-					     'actions' =>  
-					    array ( 
-					      0 =>  
-					      stdClass::__set_state(array( 
-						 'type' => 'message', 
-						 'label' => 'Yes', 
-						 'text' => 'yes', 
-					      )), 
-					      1 =>  
-					      stdClass::__set_state(array( 
-						 'type' => 'message', 
-						 'label' => 'No', 
-						 'text' => 'no', 
-					      )), 
-					    ), 
-					  )), 
-					))
+					'type' => 'text',
+					'text' => 'ร้านสเต็ก...'
 				];
 			}
 			else { 
 				$messages = [
-					stdClass::__set_state(array( 
-					   'type' => 'template', 
-					   'altText' => 'this is a confirm template', 
-					   'template' =>  
-					  stdClass::__set_state(array( 
-					     'type' => 'confirm', 
-					     'text' => 'Are you sure?', 
-					     'actions' =>  
+					array ( 
+					  'type' => 'template', 
+					  'altText' => 'this is a carousel template', 
+					  'template' =>  
+					  array ( 
+					    'type' => 'carousel', 
+					    'columns' =>  
 					    array ( 
 					      0 =>  
-					      stdClass::__set_state(array( 
-						 'type' => 'message', 
-						 'label' => 'Yes', 
-						 'text' => 'yes', 
-					      )), 
+					      array ( 
+						'thumbnailImageUrl' => 'https://example.com/bot/images/item1.jpg', 
+						'title' => 'this is menu', 
+						'text' => 'description', 
+						'actions' =>  
+						array ( 
+						  0 =>  
+						  array ( 
+						    'type' => 'postback', 
+						    'label' => 'Buy', 
+						    'data' => 'action=buy&itemid=111', 
+						  ), 
+						  1 =>  
+						  array ( 
+						    'type' => 'postback', 
+						    'label' => 'Add to cart', 
+						    'data' => 'action=add&itemid=111', 
+						  ), 
+						  2 =>  
+						  array ( 
+						    'type' => 'uri', 
+						    'label' => 'View detail', 
+						    'uri' => 'http://example.com/page/111', 
+						  ), 
+						), 
+					      ), 
 					      1 =>  
-					      stdClass::__set_state(array( 
-						 'type' => 'message', 
-						 'label' => 'No', 
-						 'text' => 'no', 
-					      )), 
+					      array ( 
+						'thumbnailImageUrl' => 'https://example.com/bot/images/item2.jpg', 
+						'title' => 'this is menu', 
+						'text' => 'description', 
+						'actions' =>  
+						array ( 
+						  0 =>  
+						  array ( 
+						    'type' => 'postback', 
+						    'label' => 'Buy', 
+						    'data' => 'action=buy&itemid=222', 
+						  ), 
+						  1 =>  
+						  array ( 
+						    'type' => 'postback', 
+						    'label' => 'Add to cart', 
+						    'data' => 'action=add&itemid=222', 
+						  ), 
+						  2 =>  
+						  array ( 
+						    'type' => 'uri', 
+						    'label' => 'View detail', 
+						    'uri' => 'http://example.com/page/222', 
+						  ), 
+						), 
+					      ), 
 					    ), 
-					  )), 
-					))
+					  ), 
+					);
 				];
 			}
 			// Make a POST Request to Messaging API to reply to sender
