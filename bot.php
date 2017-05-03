@@ -49,6 +49,7 @@ if (!is_null($events['events'])) {
 							    'type' => 'postback', 
 							    'label' => 'Add to cart', 
 							    'data' => 'action=add&itemid=111',
+							    'text' => 'ก๋วยเตี๋ยว',
 							  ),
 						  ),
 					      ), 
@@ -61,7 +62,8 @@ if (!is_null($events['events'])) {
 						    array ( 
 							    'type' => 'postback', 
 							    'label' => 'Add to cart', 
-							    'data' => 'action=add&itemid=111', 
+							    'data' => 'action=add&itemid=111',
+							    'text' => 'สเต็ก',
 							  ),
 						  ),
 					      ), 
