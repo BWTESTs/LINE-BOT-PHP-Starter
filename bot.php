@@ -543,6 +543,110 @@ if (!is_null($events['events'])) {
 					  ),
 				];
 			}
+			else if (strpos($text, 'อาหารญี่ปุ่น') !== false)
+			{
+				$messages = [
+					  'type' => 'template', 
+					  'altText' => 'this is a carousel template', 
+					  'template' =>  
+					  array ( 
+					    'type' => 'carousel', 
+					    'columns' =>  
+					    array ( 
+					      array ( 
+						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/08/21/c25acd780f4649d499bf9d90502d7ada.jpg', 
+						'title' => 'ร้าน Isao', 
+						'text' => 'description', 
+						'actions' =>  
+						  array ( 
+							  array ( 
+							    'type' => 'uri', 
+							    'label' => 'View detail',
+							    'uri' => 'https://www.wongnai.com/reviews/53ffe27e22fa4c749c0e758e4b933de5',
+							  ),
+							  array ( 
+							    'type' => 'postback', 
+							    'label' => 'Tel:0xx-xxx-xxxx', 
+							    'data' => 'action=add&itemid=111',
+							  ),
+						  ),
+					      ), 
+					      array ( 
+						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/01/09/68415c2144d5412da602f9d7cba54827.jpg', 
+						'title' => 'ร้าน Bankara Ramen', 
+						'text' => 'description', 
+						'actions' =>  
+						array ( 
+						    	  array ( 
+							    'type' => 'uri', 
+							    'label' => 'View detail',
+							    'uri' => 'https://www.wongnai.com/reviews/42bbb54bdbc941e2924a0fd8940c7b2f',
+							  ),
+							  array ( 
+							    'type' => 'postback', 
+							    'label' => 'Tel:0xx-xxx-xxxx', 
+							    'data' => 'action=add&itemid=111',
+							  ),
+						  ),
+					      ),
+					      array ( 
+						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2017/04/21/0cbd35e84edc4bf68f04d34d123c41e0.jpg', 
+						'title' => 'ร้าน Sushi Masa', 
+						'text' => 'description', 
+						'actions' =>  
+						array ( 
+						    	  array ( 
+							    'type' => 'uri', 
+							    'label' => 'View detail',
+							    'uri' => 'https://www.wongnai.com/reviews/e7a3e90f8e3140b39ee4ae8643fec13b',
+							  ),
+							  array ( 
+							    'type' => 'postback', 
+							    'label' => 'Tel:0xx-xxx-xxxx', 
+							    'data' => 'action=add&itemid=111',
+							  ),
+						  ),
+					      ),
+					      array ( 
+						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/09/18/4c435ec173aa46a9bb6ebe1510e4972d.jpg', 
+						'title' => 'ร้าน Katsushin', 
+						'text' => 'description', 
+						'actions' =>  
+						array ( 
+						    	  array ( 
+							    'type' => 'uri', 
+							    'label' => 'View detail',
+							    'uri' => 'https://www.wongnai.com/reviews/8c7d1568569b4be4a9a31e73345e4c5e',
+							  ),
+							  array ( 
+							    'type' => 'postback', 
+							    'label' => 'Tel:0xx-xxx-xxxx', 
+							    'data' => 'action=add&itemid=111',
+							  ),
+						  ),
+					      ),
+					      array ( 
+						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/10/07/7e73b81acde04d54a3d2b718c1c9cf12.jpg', 
+						'title' => 'ร้าน Umenohana', 
+						'text' => 'description', 
+						'actions' =>  
+						array ( 
+						    	  array ( 
+							    'type' => 'uri', 
+							    'label' => 'View detail',
+							    'uri' => 'https://www.wongnai.com/reviews/c2dc8aaaadd549e0a94e155e53a97984',
+							  ),
+							  array ( 
+							    'type' => 'postback', 
+							    'label' => 'Tel:0xx-xxx-xxxx', 
+							    'data' => 'action=add&itemid=111',
+							  ),
+						  ),
+					      ),
+					    ), 
+					  ),
+				];
+			}
 			else if (strpos($text, 'สูตรอาหาร') !== false)
 			{
 				
