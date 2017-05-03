@@ -16,11 +16,17 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
-			if (strpos($text, 'สเต็ก') !== false) {
+			if (strpos($text, 'help') !== false) {
 				// Build message to reply back
 				$messages = [
 					'type' => 'text',
-					'text' => 'ร้านสเต็ก...'
+					'text' => 'ค้นหาร้านอาหาร หรือสอบถามข้อมูลได้ง่าย ๆ ดังนี้ "\r\n"
+						   1.ค้นหาร้านอาหารแนะนำ "\r\n"
+						   2.ค้นหาร้านอาหาร "\r\n"
+						   3.ค้นหาอาหารตามประเภท "\r\n"
+						   4.ค้นหาจากชื่อร้าน "\r\n"
+						   5.ขอสูตรอาหาร "\r\n"
+						   6.ค้นหาโปรโมชั่น "\r\n"'
 				];
 			}
 			else { 
