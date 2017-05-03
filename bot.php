@@ -17,19 +17,16 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 
 			if (strpos($text, 'สเต็ก') !== false) {
-				// Build message to reply back
-				$messages = [
-					'type' => 'text',
-					'text' => 'ร้านสเต็ก...'
-				];
+				$textS = 'ร้านสเต็ก...';
 			}
 			else { 
-				$messages = [
-					'type' => 'text',
-					'text' => 'งง...'
-				];
+				$textS = 'งง...';
 			}
-
+			// Build message to reply back
+			$messages = [
+				'type' => 'text',
+				'text' => $textS
+			];
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
