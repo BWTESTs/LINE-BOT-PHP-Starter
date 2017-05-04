@@ -31,14 +31,8 @@ if (!is_null($events['events'])) {
 			}
 			else if (strpos($text, 'แนะนำ') !== false) {
 				$messages = [
-					array (
 					'type' => 'text',
 					'text' => 'อยากกินอาหารประเภทไหน'
-					),
-					array (
-					'type' => 'text',
-					'text' => 'อยากกินอาหารประเภทไหน !!'
-					)
 				];
 			}
 			else if (strpos($text, 'มีอะไรให้เลือก') !== false) {
