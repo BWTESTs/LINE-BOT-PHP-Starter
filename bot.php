@@ -149,9 +149,9 @@ if (!is_null($events['events'])) {
 							    'uri' => 'https://www.wongnai.com/reviews/4fe806fabb7b422584f53b73715b9c09',
 							  ),
 							  array ( 
-							    'type' => 'uri', 
+							    'type' => 'postback', 
 							    'label' => 'Tel:0xx-xxx-xxxx', 
-							    'uri' => '0952514507',
+							    'data' => 'action=add&itemid=111',
 							  ),
 						  ),
 					      ), 
