@@ -16,111 +16,115 @@ if (!is_null($events['events'])) {
 		if ($event['type'] == 'message' && $event['message']['type'] == 'location')
 		{
 			$messages = [
-					  'type' => 'template',
-					  'altText' => 'this is a carousel template',
-					  'template' =>
+			  'type' => 'template',
+			  'altText' => 'this is a carousel template',
+			  'template' =>
+			  array (
+			    'type' => 'carousel',
+			    'columns' =>
+			    array (
+			      array (
+				'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/02/22/cac93497800a43aabd8b7feae8053ed7.jpg',
+				'title' => 'ร้าน พี่อ้อ ก๋วยเตี๋ยวต้มยำ',
+				'text' => 'description',
+				'actions' =>
+				  array (
 					  array (
-					    'type' => 'carousel',
-					    'columns' =>
-					    array (
-					      array (
-						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/02/22/cac93497800a43aabd8b7feae8053ed7.jpg',
-						'title' => 'ร้าน พี่อ้อ ก๋วยเตี๋ยวต้มยำ',
-						'text' => 'description',
-						'actions' =>
-						  array (
-							  array (
-							    'type' => 'uri',
-							    'label' => 'View detail',
-							    'uri' => 'https://www.wongnai.com/reviews/4fe806fabb7b422584f53b73715b9c09',
-							  ),
-							  array (
-							    'type' => 'uri',
-							    'label' => 'Tel:0xx-xxx-xxxx',
-							    'uri' => 'tel:0952514507',
-							  ),
-						  ),
-					      ),
-					      array (
-						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/05/15/fa90d9d1578a4679981de801f2e47e85.jpg',
-						'title' => 'ร้าน รุ่งเรือง ก๋วยเตี๋ยวหมู',
-						'text' => 'description',
-						'actions' =>
-						array (
-						    	  array (
-							    'type' => 'uri',
-							    'label' => 'View detail',
-							    'uri' => 'https://www.wongnai.com/reviews/80cdeca431564f75a04f3bec3731482b',
-							  ),
-							  array (
-							    'type' => 'postback',
-							    'label' => 'Tel:0xx-xxx-xxxx',
-							    'data' => 'action=add&itemid=111',
-							  ),
-						  ),
-					      ),
-					      array (
-						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/07/06/a924ead1af68471caa4882bf192d0be2.jpg',
-						'title' => 'ร้าน รวยแซ่บ ก๋วยเตี๋ยวต้มยำไข่หวาน',
-						'text' => 'description',
-						'actions' =>
-						array (
-						    	  array (
-							    'type' => 'uri',
-							    'label' => 'View detail',
-							    'uri' => 'https://www.wongnai.com/reviews/675501d64a3249b7a0c9612d4accf667',
-							  ),
-							  array (
-							    'type' => 'postback',
-							    'label' => 'Tel:0xx-xxx-xxxx',
-							    'data' => 'action=add&itemid=111',
-							  ),
-						  ),
-					      ),
-					      array (
-						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/01/14/a991d52eb630401e932e8eee55a86974.jpg',
-						'title' => 'ร้าน เหล่ากุ้ย บะหมี่อัศวิน',
-						'text' => 'description',
-						'actions' =>
-						array (
-						    	  array (
-							    'type' => 'uri',
-							    'label' => 'View detail',
-							    'uri' => 'https://www.wongnai.com/reviews/919a4b70a2c24822b258d1a3c9c0246a',
-							  ),
-							  array (
-							    'type' => 'postback',
-							    'label' => 'Tel:0xx-xxx-xxxx',
-							    'data' => 'action=add&itemid=111',
-							  ),
-						  ),
-					      ),
-					      array (
-						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2012/04/28/a9bd566389c14e3fbb55ba66efe87406.jpg',
-						'title' => 'ร้าน โกบู้รสซิ่ง',
-						'text' => 'description',
-						'actions' =>
-						array (
-						    	  array (
-							    'type' => 'uri',
-							    'label' => 'View detail',
-							    'uri' => 'https://www.wongnai.com/reviews/e617f3e7c0fb4a77b77c83ec0e7ec89e',
-							  ),
-							  array (
-							    'type' => 'postback',
-							    'label' => 'Tel:0xx-xxx-xxxx',
-							    'data' => 'action=add&itemid=111',
-							  ),
-						  ),
-					      ),
-					    ),
+					    'type' => 'uri',
+					    'label' => 'View detail',
+					    'uri' => 'https://www.wongnai.com/reviews/4fe806fabb7b422584f53b73715b9c09',
 					  ),
-				];
+					  array (
+					    'type' => 'uri',
+					    'label' => 'Tel:0xx-xxx-xxxx',
+					    'uri' => 'tel:0952514507',
+					  ),
+				  ),
+			      ),
+			      array (
+				'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/05/15/fa90d9d1578a4679981de801f2e47e85.jpg',
+				'title' => 'ร้าน รุ่งเรือง ก๋วยเตี๋ยวหมู',
+				'text' => 'description',
+				'actions' =>
+				array (
+					  array (
+					    'type' => 'uri',
+					    'label' => 'View detail',
+					    'uri' => 'https://www.wongnai.com/reviews/80cdeca431564f75a04f3bec3731482b',
+					  ),
+					  array (
+					    'type' => 'postback',
+					    'label' => 'Tel:0xx-xxx-xxxx',
+					    'data' => 'action=add&itemid=111',
+					  ),
+				  ),
+			      ),
+			      array (
+				'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/07/06/a924ead1af68471caa4882bf192d0be2.jpg',
+				'title' => 'ร้าน รวยแซ่บ ก๋วยเตี๋ยวต้มยำไข่หวาน',
+				'text' => 'description',
+				'actions' =>
+				array (
+					  array (
+					    'type' => 'uri',
+					    'label' => 'View detail',
+					    'uri' => 'https://www.wongnai.com/reviews/675501d64a3249b7a0c9612d4accf667',
+					  ),
+					  array (
+					    'type' => 'postback',
+					    'label' => 'Tel:0xx-xxx-xxxx',
+					    'data' => 'action=add&itemid=111',
+					  ),
+				  ),
+			      ),
+			      array (
+				'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/01/14/a991d52eb630401e932e8eee55a86974.jpg',
+				'title' => 'ร้าน เหล่ากุ้ย บะหมี่อัศวิน',
+				'text' => 'description',
+				'actions' =>
+				array (
+					  array (
+					    'type' => 'uri',
+					    'label' => 'View detail',
+					    'uri' => 'https://www.wongnai.com/reviews/919a4b70a2c24822b258d1a3c9c0246a',
+					  ),
+					  array (
+					    'type' => 'postback',
+					    'label' => 'Tel:0xx-xxx-xxxx',
+					    'data' => 'action=add&itemid=111',
+					  ),
+				  ),
+			      ),
+			      array (
+				'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2012/04/28/a9bd566389c14e3fbb55ba66efe87406.jpg',
+				'title' => 'ร้าน โกบู้รสซิ่ง',
+				'text' => 'description',
+				'actions' =>
+				array (
+					  array (
+					    'type' => 'uri',
+					    'label' => 'View detail',
+					    'uri' => 'https://www.wongnai.com/reviews/e617f3e7c0fb4a77b77c83ec0e7ec89e',
+					  ),
+					  array (
+					    'type' => 'postback',
+					    'label' => 'Tel:0xx-xxx-xxxx',
+					    'data' => 'action=add&itemid=111',
+					  ),
+				  ),
+			      ),
+			    ),
+			  ),
+			];
+			$messages_2 = [
+				'type' => 'text',
+				'text' => 'เป็นไง ร้านโดนใจมั้ย?'
+			];
 			$data = [
 				'replyToken' => $replyToken,
-				'messages' => [$messages],
+				'messages' => [$messages,$messages_2],
 			];
-
+			
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
 
@@ -312,6 +316,114 @@ if (!is_null($events['events'])) {
 							),
 						),
 					),
+				];
+				$data = [
+					'replyToken' => $replyToken,
+					'messages' => [$messages],
+				];
+			}
+			else if (strpos($text, 'ไม่โดนใจ') !== false)
+			{
+				$messages = [
+					  'type' => 'template',
+					  'altText' => 'this is a carousel template',
+					  'template' =>
+					  array (
+					    'type' => 'carousel',
+					    'columns' =>
+					    array (
+					      array (
+						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/11/01/ddb28578db4d41b08ca94af7c85f8b8c.jpg',
+						'title' => 'ร้าน Arno"s Butcher and Eatery',
+						'text' => 'description',
+						'actions' =>
+						  array (
+							  array (
+							    'type' => 'uri',
+							    'label' => 'View detail',
+							    'uri' => 'https://www.wongnai.com/reviews/d7d8e9e75bf841cc8724f25e59513488',
+							  ),
+							  array (
+							    'type' => 'postback',
+							    'label' => 'Tel:0xx-xxx-xxxx',
+							    'data' => 'action=add&itemid=111',
+							  ),
+						  ),
+					      ),
+					      array (
+						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/06/19/a2a8f17558764ee2be573211057ec2e5.jpg',
+						'title' => 'ร้าน El Gaucho Argentinian Steakhouse',
+						'text' => 'description',
+						'actions' =>
+						array (
+						    	  array (
+							    'type' => 'uri',
+							    'label' => 'View detail',
+							    'uri' => 'https://www.wongnai.com/reviews/b5ffccc708e44a44ae9879cced423b26',
+							  ),
+							  array (
+							    'type' => 'postback',
+							    'label' => 'Tel:0xx-xxx-xxxx',
+							    'data' => 'action=add&itemid=111',
+							  ),
+						  ),
+					      ),
+					      array (
+						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2015/04/24/00cb90b5f9d64009be5e7fc4a22537ff.jpg',
+						'title' => 'ร้าน Kritsada Steak House',
+						'text' => 'description',
+						'actions' =>
+						array (
+						    	  array (
+							    'type' => 'uri',
+							    'label' => 'View detail',
+							    'uri' => 'https://www.wongnai.com/reviews/9a412c24510d4e8f813a807f7d99b0f7',
+							  ),
+							  array (
+							    'type' => 'postback',
+							    'label' => 'Tel:0xx-xxx-xxxx',
+							    'data' => 'action=add&itemid=111',
+							  ),
+						  ),
+					      ),
+					      array (
+						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/11/06/0f980e8aece64b76a4223fd5d7fa8042.jpg',
+						'title' => 'ร้าน Eat Am Are',
+						'text' => 'description',
+						'actions' =>
+						array (
+						    	  array (
+							    'type' => 'uri',
+							    'label' => 'View detail',
+							    'uri' => 'https://www.wongnai.com/reviews/d4ef2adb6a614ddc83298503819ff3b0',
+							  ),
+							  array (
+							    'type' => 'postback',
+							    'label' => 'Tel:0xx-xxx-xxxx',
+							    'data' => 'action=add&itemid=111',
+							  ),
+						  ),
+					      ),
+					      array (
+						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/11/19/26da29c395dc45c6b391735c1060ebd7.jpg',
+						'title' => 'ร้าน Kobe Steakhouse',
+						'text' => 'description',
+						'actions' =>
+						array (
+						    	  array (
+							    'type' => 'uri',
+							    'label' => 'View detail',
+							    'uri' => 'https://www.wongnai.com/reviews/844be4ff506b48ebad403e36986e26d6',
+							  ),
+							  array (
+							    'type' => 'postback',
+							    'label' => 'Tel:0xx-xxx-xxxx',
+							    'data' => 'action=add&itemid=111',
+							  ),
+						  ),
+					      ),
+					    ),
+					  ),
 				];
 				$data = [
 					'replyToken' => $replyToken,
