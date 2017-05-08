@@ -170,18 +170,24 @@ if (!is_null($events['events'])) {
 					'altText' => 'this is a buttons template',
 					'template' =>
 					array (
-						'type' => 'buttons',
-						//'thumbnailImageUrl' => 'https://example.com/bot/images/image.jpg',
-						'title' => 'Menu',
-						'text' => 'ช่วยกดแชร์ Location มาให้เราหน่อย เดี๋ยวเราจะลองหาร้านแถวนั้นให้',
-						'actions' =>
-						array (
-							array (
-								'type' => 'postback',
-								'label' => 'แชร์ Location',
-								'data' => 'action=buy&itemid=123',
-							),
-						),
+						'type' => 'location',
+						'title' => 'my location',
+						'address' => '〒150-0002 東京都渋谷区渋谷２丁目２１−１',
+						'latitude' => 35.659108079422147,
+						'longitude' => 139.70372892916203,
+						
+// 						'type' => 'buttons',
+// 						//'thumbnailImageUrl' => 'https://example.com/bot/images/image.jpg',
+// 						//'title' => 'Menu',
+// 						'text' => 'ช่วยกดแชร์ Location มาให้เราหน่อย เดี๋ยวเราจะลองหาร้านแถวนั้นให้',
+// 						'actions' =>
+// 						array (
+// 							array (
+// 								'type' => 'postback',
+// 								'label' => 'แชร์ Location',
+// 								'data' => 'action=buy&itemid=123',
+// 							),
+// 						),
 					),
 				];
 				$data = [
