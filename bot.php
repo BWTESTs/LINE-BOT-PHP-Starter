@@ -171,7 +171,7 @@ if (!is_null($events['events'])) {
 					'template' =>
 					array (
 						'type' => 'buttons',
-						'thumbnailImageUrl' => 'https://example.com/bot/images/image.jpg',
+						//'thumbnailImageUrl' => 'https://example.com/bot/images/image.jpg',
 						'title' => 'Menu',
 						'text' => 'ช่วยกดแชร์ Location มาให้เราหน่อย เดี๋ยวเราจะลองหาร้านแถวนั้นให้',
 						'actions' =>
