@@ -205,7 +205,7 @@ if (!is_null($events['events'])) {
 			else if (strpos($text, 'ยัง') !== false) {
 				$messages = [
 					'type' => 'text',
-					'text' => 'มีร้านในใจยัง ให้สิงหาแนะนำป่ะ'
+					'text' => 'มีเมนูหรือร้านในใจยัง ให้สิงหาแนะนำป่ะ'
 				];
 				$data = [
 					'replyToken' => $replyToken,
