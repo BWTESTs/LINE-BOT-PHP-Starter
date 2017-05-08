@@ -32,35 +32,22 @@ if (!is_null($events['events'])) {
 			else if (strpos($text, 'แบงค์') !== false) {
 				$messages = [
 					'type' => 'text',
-					'text' => 'ยินดีที่ได้รู้จักนะ'.$text
+					'text' => 'ยินดีที่ได้รู้จักนะแบงค์
+										กินไรยังเนี่ย'
 				];
 			}
-			else if (strpos($text, 'เช่นกัน') !== false) {
+			else if (strpos($text, 'ยัง') !== false) {
 				$messages = [
 					'type' => 'text',
-					'text' => 'กินไรยังเนี่ย'
+					'text' => 'มีร้านในใจยัง ให้สิงหาแนะนำป่ะ'
 				];
 			}
-			else if (strpos($text, 'ยังเลย') !== false) {
-				$messages = [
-					'type' => 'text',
-					'text' => 'กินไรดีล่ะ'
-				];
-			}
-			else if (strpos($text, 'ไม่รู้เลย') !== false) {
-				$messages = [
-					'type' => 'text',
-					'text' => 'ชอบกินแนวไหนล่ะ'
-				];
-			}
-			// else if (strpos($text, 'แนะนำ') !== false) {
-			// 	$messages = [
-			// 		'type' => 'text',
-			// 		'text' => 'อยากกินอาหารประเภทไหน'
-			// 	];
-			// }
 			else if (strpos($text, 'มีอะไรให้เลือก') !== false || strpos($text, 'แนะนำ') !== false) {
 				// Build message to reply back
+				$messages_text = [
+					'type' => 'text',
+					'text' => 'อยากกินแนวไหนดีล่ะ? (แสดงประเภทอาหาร)'
+				];
 				$messages = [
 					  'type' => 'template',
 					  'altText' => 'this is a carousel template',
