@@ -175,7 +175,7 @@ if (!is_null($events['events'])) {
 					    array (
 					      array (
 									'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/02/22/cac93497800a43aabd8b7feae8053ed7.jpg',
-									'title' => '',
+									'title' => 'ก๋วยเตี๋ยว',
 									'text' => 'ช่วยกดแชร์ Location มาให้เราหน่อย เดี๋ยวเราจะลองหาให',
 									'actions' =>
 						  			array (
@@ -183,7 +183,7 @@ if (!is_null($events['events'])) {
 										    'type' => 'postback',
 										    'label' => 'แชร์ Location',
 										    'data' => 'action=add&itemid=111',
-										    // 'text' => 'ก๋วยเตี๋ยว',
+										    'text' => 'ก๋วยเตี๋ยว',
 										  ),
 						  			),
 					      ),
