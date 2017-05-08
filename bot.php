@@ -21,7 +21,7 @@ if (!is_null($events['events'])) {
 				'messages' => [$messages],
 			];
 		}
-		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
+		else if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
 			$text = $event['message']['text'];
 			// Get replyToken
