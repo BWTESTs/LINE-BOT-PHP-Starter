@@ -173,23 +173,13 @@ if (!is_null($events['events'])) {
 						'type' => 'buttons',
 						'thumbnailImageUrl' => 'https://example.com/bot/images/image.jpg',
 						'title' => 'Menu',
-						'text' => 'Please select',
+						'text' => 'ช่วยกดแชร์ Location มาให้เราหน่อย เดี๋ยวเราจะลองหาร้านแถวนั้นให้',
 						'actions' =>
 						array (
 							array (
 								'type' => 'postback',
-								'label' => 'Buy',
+								'label' => 'แชร์ Location',
 								'data' => 'action=buy&itemid=123',
-							),
-							array (
-								'type' => 'postback',
-								'label' => 'Add to cart',
-								'data' => 'action=add&itemid=123',
-							),
-							array (
-								'type' => 'uri',
-								'label' => 'View detail',
-								'uri' => 'http://example.com/page/123',
 							),
 						),
 					),
