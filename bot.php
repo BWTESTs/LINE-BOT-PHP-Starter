@@ -701,7 +701,7 @@ if (!is_null($events['events'])) {
 			else {
 				$messages = [
 					  'type' => 'text',
-					  'text' => 'โทษที...เราไม่เข้าใจ'
+					  'text' => 'โทษที...เราไม่เข้าใจ!'
 				];
 			}
 			// Make a POST Request to Messaging API to reply to sender
