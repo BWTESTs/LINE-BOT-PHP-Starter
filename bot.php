@@ -166,29 +166,33 @@ if (!is_null($events['events'])) {
 			else if (strpos($text, 'รอบตัว') !== false)
 			{
 				$messages = [
-					  'type' => 'template',
-					  'altText' => 'this is a carousel template',
-					  'template' =>
-					  array (
-					    'type' => 'carousel',
-					    'columns' =>
-					    array (
-					      array (
-									'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/02/22/cac93497800a43aabd8b7feae8053ed7.jpg',
-									'title' => 'ก๋วยเตี๋ยว',
-									'text' => 'ช่วยกดแชร์ Location มาให้เราหน่อย เดี๋ยวเราจะลองหาให',
-									'actions' =>
-						  			array (
-										  array (
-										    'type' => 'postback',
-										    'label' => 'แชร์ Location',
-										    'data' => 'action=add&itemid=111',
-										    'text' => 'ก๋วยเตี๋ยว',
-										  ),
-						  			),
-					      ),
-					    ),
-					  ),
+					'type' => 'template',
+					'altText' => 'this is a buttons template',
+					'template' =>
+					array (
+						'type' => 'buttons',
+						'thumbnailImageUrl' => 'https://example.com/bot/images/image.jpg',
+						'title' => 'Menu',
+						'text' => 'Please select',
+						'actions' =>
+						array (
+							array (
+								'type' => 'postback',
+								'label' => 'Buy',
+								'data' => 'action=buy&itemid=123',
+							),
+							array (
+								'type' => 'postback',
+								'label' => 'Add to cart',
+								'data' => 'action=add&itemid=123',
+							),
+							array (
+								'type' => 'uri',
+								'label' => 'View detail',
+								'uri' => 'http://example.com/page/123',
+							),
+						),
+					),
 				];
 				$data = [
 					'replyToken' => $replyToken,
