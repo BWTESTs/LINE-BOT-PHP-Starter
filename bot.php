@@ -47,7 +47,7 @@ if (!is_null($events['events'])) {
 					'text' => 'กินไรดีล่ะ'
 				];
 			}
-			else if (strpos($text, 'ยังไม่รู้เลยอ่ะ ช่วยคิดหน่อย') !== false) {
+			else if (strpos($text, 'ไม่รู้เลย') !== false) {
 				$messages = [
 					'type' => 'text',
 					'text' => 'ชอบกินแนวไหนล่ะ'
