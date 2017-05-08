@@ -38,7 +38,7 @@ if (!is_null($events['events'])) {
 			else if (strpos($text, 'เช่นกัน') !== false) {
 				$messages = [
 					'type' => 'text',
-					'text' => 'กินไรยัง?'
+					'text' => 'กินไรยังเนี่ย'
 				];
 			}
 			else if (strpos($text, 'ยังเลย') !== false) {
