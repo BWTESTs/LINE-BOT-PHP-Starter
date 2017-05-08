@@ -10,6 +10,17 @@ if (!is_null($events['events'])) {
 	// Loop through each event
 	foreach ($events['events'] as $event) {
 		// Reply only when message sent is in 'text' format
+		if ($event['message']['type'] == 'location')
+		{
+			$messages = [
+				'type' => 'text',
+				'text' => 'latitude '.$event['message']['latitude'].' : longitude '.$event['message']['longitude']
+			];
+			$data = [
+				'replyToken' => $replyToken,
+				'messages' => [$messages],
+			];
+		}
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
 			$text = $event['message']['text'];
@@ -183,17 +194,6 @@ if (!is_null($events['events'])) {
 							),
 						),
 					),
-				];
-				$data = [
-					'replyToken' => $replyToken,
-					'messages' => [$messages],
-				];
-			}
-			else if ($event['message']['type'] == 'location')
-			{
-				$messages = [
-					'type' => 'text',
-					'text' => 'latitude'
 				];
 				$data = [
 					'replyToken' => $replyToken,
