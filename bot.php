@@ -167,6 +167,16 @@ if (!is_null($events['events'])) {
 					'messages' => [$messages],
 				];
 			}
+			else if (strpos($text, 'สิงหา') !== false || strpos($text, 'เฮ้ย') !== false) {
+				$messages = [
+					'type' => 'text',
+					'text' => 'ว่าไง'
+				];
+				$data = [
+					'replyToken' => $replyToken,
+					'messages' => [$messages],
+				];
+			}
 			else if (strpos($text, 'แบงค์') !== false) {
 				$messages = [
 					'type' => 'text',
