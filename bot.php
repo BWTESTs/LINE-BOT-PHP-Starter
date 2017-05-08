@@ -53,14 +53,18 @@ if (!is_null($events['events'])) {
 					'type' => 'text',
 					'text' => 'มีร้านในใจยัง ให้สิงหาแนะนำป่ะ'
 				];
+				$data = [
+					'replyToken' => $replyToken,
+					'messages' => [$messages],
+				];
 			}
 			else if (strpos($text, 'มีอะไรให้เลือก') !== false || strpos($text, 'แนะนำ') !== false) {
 				// Build message to reply back
-				$messages_text = [
-					'type' => 'text',
-					'text' => 'อยากกินแนวไหนดีล่ะ? (แสดงประเภทอาหาร)'
-				];
 				$messages = [
+					'type' => 'text',
+					'text' => 'อยากกินแนวไหนดีล่ะ?'
+				];
+				$messages_2 = [
 					  'type' => 'template',
 					  'altText' => 'this is a carousel template',
 					  'template' =>
@@ -140,6 +144,10 @@ if (!is_null($events['events'])) {
 					      ),
 					    ),
 					  ),
+				];
+				$data = [
+					'replyToken' => $replyToken,
+					'messages' => [$messages, $messages_2],
 				];
 			}
 			else if (strpos($text, 'ค้นหาร้าน') !== false)
