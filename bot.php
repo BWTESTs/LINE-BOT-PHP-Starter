@@ -32,7 +32,7 @@ if (!is_null($events['events'])) {
 			else if (strpos($text, 'แบงค์') !== false) {
 				$messages = [
 					'type' => 'text',
-					'text' => 'ยินดีที่ได้รู้จักนะ'
+					'text' => 'ยินดีที่ได้รู้จักนะ'.$text
 				];
 			}
 			else if (strpos($text, 'เช่นกัน') !== false) {
