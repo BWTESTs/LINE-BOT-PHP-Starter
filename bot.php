@@ -20,7 +20,7 @@ if (!is_null($events['events'])) {
 				$messages = [
 					'type' => 'text',
 					'text' => 'ยินดีที่ได้รู้จักนะแบงค์
-											กินไรยังเนี่ย'
+						กินไรยังเนี่ย'
 				];
 			}
 			else if (strpos($text, 'ยัง') !== false) {
@@ -115,14 +115,6 @@ if (!is_null($events['events'])) {
 					  ),
 				];
 			}
-
-
-
-
-
-
-
-
 			if (strpos(strtolower($text), 'help') !== false || strpos($text, 'หาอะไรได้บ้าง') !== false) {
 				// Build message to reply back
 				$messages = [
