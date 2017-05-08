@@ -194,6 +194,17 @@ if (!is_null($events['events'])) {
 					'messages' => [$messages],
 				];
 			}
+			else if ($event['message']['type'] == 'location')
+			{
+				$messages = [
+					'type' => 'text',
+					'text' => 'latitude'.$event['message']['latitude'].' : longitude'.$event['message']['longitude']
+				];
+				$data = [
+					'replyToken' => $replyToken,
+					'messages' => [$messages],
+				];
+			}
 			else if (strpos($text, 'ค้นหาร้าน') !== false)
 			{
 
