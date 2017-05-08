@@ -177,6 +177,17 @@ if (!is_null($events['events'])) {
 					'messages' => [$messages],
 				];
 			}
+			else if (strpos($text, 'ทำไรอยู่') !== false || strpos($text, 'เฮ้ย') !== false) {
+				$array_messages = array("นั่งหาร้านอาหารอร่อยๆ อยู่อ่ะ กินไรยังเนี่ย?", "กำลังจะอาบน้ำ ว่าจะไปหาอะไรกินสักหน่อย แล้วนี่กินไรยัง?", "กำลังจะทำกับข้าวกินกับที่บ้าน กินไรยังวะ");
+				$messages = [
+					'type' => 'text',
+					'text' => ''.$array_messages[rand(0,2)]
+				];
+				$data = [
+					'replyToken' => $replyToken,
+					'messages' => [$messages],
+				];
+			}
 			else if (strpos($text, 'แบงค์') !== false) {
 				$messages = [
 					'type' => 'text',
