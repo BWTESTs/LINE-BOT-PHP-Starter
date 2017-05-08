@@ -1,5 +1,5 @@
 <?php
-$access_token = '5eJQBT5OVKGnLsE6lXXUHhxo3ySkrok2TzSc+JbWs/I7l9jC91Ymn5WDELvNADkMjzirUo0XRjswVSHpIEoNyvEkaMPzHJfz6xyyIwo/H9yFVYtJbkKlYmX9bOWn9AIOur5vWMlhlU+xtEm3e9rNqAdB04t89/1O/w1cDnyilFU=';
+$access_token = 'j2cvIqu3dkuoH3jnHpwXm8T21k7HG2ivHxRJ5RdnXVFdWLjmMlgFNJL82OIfocOOp1LHsZkPrXzZQcrQx2TrEVAKxSOuXJupP+DN/aBQ5KOYCD/9OhPSI5eekFGRDMgz2RwEOZDr/SN3NHnkKgZcAQdB04t89/1O/w1cDnyilFU=';
 
 // Get POST body content
 $content = file_get_contents('php://input');
@@ -16,24 +16,28 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
-			if (strpos($text, 'แบงค์') !== false) {
-				$messages = [
-					'type' => 'text',
-					'text' => 'ยินดีที่ได้รู้จักนะแบงค์
-						กินไรยังเนี่ย'
-				];
-			}
-			else if (strpos($text, 'ยัง') !== false) {
-				$messages = [
-					'type' => 'text',
-					'text' => 'มีร้านในใจยัง ให้สิงหาแนะนำป่ะ?'
-				];
-			}
-			else if (strpos($text, 'มีอะไรให้เลือก') !== false || strpos($text, 'แนะนำ') !== false) {
+			if (strpos(strtolower($text), 'help') !== false || strpos($text, 'หาอะไรได้บ้าง') !== false) {
 				// Build message to reply back
 				$messages = [
 					'type' => 'text',
-					'text' => 'มีร้านในใจยัง ให้สิงหาแนะนำป่ะ?',
+					'text' => 'ค้นหาร้านอาหาร หรือสอบถามข้อมูลได้ง่าย ๆ ดังนี้
+					1.ค้นหาร้านอาหารแนะนำ
+					2.ค้นหาร้านอาหาร
+					3.ค้นหาอาหารตามประเภท
+					4.ค้นหาจากชื่อร้าน
+					5.ขอสูตรอาหาร
+					6.ค้นหาโปรโมชั่น'
+				];
+			}
+			else if (strpos($text, 'แนะนำ') !== false) {
+				$messages = [
+					'type' => 'text',
+					'text' => 'อยากกินอาหารประเภทไหน'
+				];
+			}
+			else if (strpos($text, 'มีอะไรให้เลือก') !== false) {
+				// Build message to reply back
+				$messages = [
 					  'type' => 'template',
 					  'altText' => 'this is a carousel template',
 					  'template' =>
@@ -115,57 +119,6 @@ if (!is_null($events['events'])) {
 					  ),
 				];
 			}
-			if (strpos(strtolower($text), 'help') !== false || strpos($text, 'หาอะไรได้บ้าง') !== false) {
-				// Build message to reply back
-				$messages = [
-					'type' => 'text',
-					'text' => 'ค้นหาร้านอาหาร หรือสอบถามข้อมูลได้ง่าย ๆ ดังนี้
-					1.ค้นหาร้านอาหารแนะนำ
-					2.ค้นหาร้านอาหาร
-					3.ค้นหาอาหารตามประเภท
-					4.ค้นหาจากชื่อร้าน
-					5.ขอสูตรอาหาร
-					6.ค้นหาโปรโมชั่น'
-				];
-			}
-
-			// else if (strpos($text, 'เช่นกัน') !== false) {
-			// 	$messages = [
-			// 		'type' => 'text',
-			// 		'text' => 'กินไรยัง?'
-			// 	];
-			// }
-			// else if (strpos($text, 'ยังเลย') !== false) {
-			// 	$messages = [
-			// 		'type' => 'text',
-			// 		'text' => 'กินไรดีล่ะ'
-			// 	];
-			// }
-			// else if (strpos($text, 'ยังไม่รู้เลยอ่ะ ช่วยคิดหน่อย') !== false) {
-			// 	$messages = [
-			// 		'type' => 'text',
-			// 		'text' => 'ชอบกินแนวไหนล่ะ'
-			// 	];
-			// }
-			// else if (strpos($text, '') !== false) {
-			// 	$messages = [
-			// 		'type' => 'text',
-			// 		'text' => ''
-			// 	];
-			// }
-			// else if (strpos($text, '') !== false) {
-			// 	$messages = [
-			// 		'type' => 'text',
-			// 		'text' => ''
-			// 	];
-			// }
-			// else if (strpos($text, 'แนะนำ') !== false) {
-			// 	$messages = [
-			// 		'type' => 'text',
-			// 		'text' => 'อยากกินอาหารประเภทไหน'
-			// 	];
-			// }
-
 			else if (strpos($text, 'ค้นหาร้าน') !== false)
 			{
 
@@ -701,7 +654,7 @@ if (!is_null($events['events'])) {
 			else {
 				$messages = [
 					  'type' => 'text',
-					  'text' => 'โทษที...เราไม่เข้าใจ!'.$text
+					  'text' => 'โทษที...เราไม่เข้าใจ'
 				];
 			}
 			// Make a POST Request to Messaging API to reply to sender
