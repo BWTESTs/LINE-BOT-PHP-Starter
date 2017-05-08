@@ -17,7 +17,7 @@ if (!is_null($events['events'])) {
 		{
 			$messages = [
 				'type' => 'text',
-				'text' => 'latitude '.$event['message']['latitude'].' : longitude '.$event['message']['longitude']
+				'text' => 'latitude '.$event['message']['latitude'].' : longitude '.$event['message']['longitude'].' : address '.$event['message']['address']
 			];
 			$data = [
 				'replyToken' => $replyToken,
