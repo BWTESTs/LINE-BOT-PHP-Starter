@@ -16,52 +16,24 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
-			if (strpos(strtolower($text), 'help') !== false || strpos($text, 'หาอะไรได้บ้าง') !== false) {
-				// Build message to reply back
+			if (strpos($text, 'แบงค์') !== false) {
 				$messages = [
 					'type' => 'text',
-					'text' => 'ค้นหาร้านอาหาร หรือสอบถามข้อมูลได้ง่าย ๆ ดังนี้
-					1.ค้นหาร้านอาหารแนะนำ
-					2.ค้นหาร้านอาหาร
-					3.ค้นหาอาหารตามประเภท
-					4.ค้นหาจากชื่อร้าน
-					5.ขอสูตรอาหาร
-					6.ค้นหาโปรโมชั่น'
+					'text' => 'ยินดีที่ได้รู้จักนะแบงค์
+											กินไรยังเนี่ย'
 				];
 			}
-			else if (strpos($text, 'แบงค์') !== false) {
+			else if (strpos($text, 'ยัง') !== false) {
 				$messages = [
 					'type' => 'text',
-					'text' => 'ยินดีที่ได้รู้จักนะ'.$text
+					'text' => 'มีร้านในใจยัง ให้สิงหาแนะนำป่ะ?'
 				];
 			}
-			else if (strpos($text, 'เช่นกัน') !== false) {
-				$messages = [
-					'type' => 'text',
-					'text' => 'กินไรยังเนี่ย'
-				];
-			}
-			else if (strpos($text, 'ยังเลย') !== false) {
-				$messages = [
-					'type' => 'text',
-					'text' => 'กินไรดีล่ะ'
-				];
-			}
-			else if (strpos($text, 'ไม่รู้เลย') !== false) {
-				$messages = [
-					'type' => 'text',
-					'text' => 'ชอบกินแนวไหนล่ะ'
-				];
-			}
-			// else if (strpos($text, 'แนะนำ') !== false) {
-			// 	$messages = [
-			// 		'type' => 'text',
-			// 		'text' => 'อยากกินอาหารประเภทไหน'
-			// 	];
-			// }
 			else if (strpos($text, 'มีอะไรให้เลือก') !== false || strpos($text, 'แนะนำ') !== false) {
 				// Build message to reply back
 				$messages = [
+					'type' => 'text',
+					'text' => 'มีร้านในใจยัง ให้สิงหาแนะนำป่ะ?',
 					  'type' => 'template',
 					  'altText' => 'this is a carousel template',
 					  'template' =>
@@ -143,6 +115,65 @@ if (!is_null($events['events'])) {
 					  ),
 				];
 			}
+
+
+
+
+
+
+
+
+			if (strpos(strtolower($text), 'help') !== false || strpos($text, 'หาอะไรได้บ้าง') !== false) {
+				// Build message to reply back
+				$messages = [
+					'type' => 'text',
+					'text' => 'ค้นหาร้านอาหาร หรือสอบถามข้อมูลได้ง่าย ๆ ดังนี้
+					1.ค้นหาร้านอาหารแนะนำ
+					2.ค้นหาร้านอาหาร
+					3.ค้นหาอาหารตามประเภท
+					4.ค้นหาจากชื่อร้าน
+					5.ขอสูตรอาหาร
+					6.ค้นหาโปรโมชั่น'
+				];
+			}
+
+			// else if (strpos($text, 'เช่นกัน') !== false) {
+			// 	$messages = [
+			// 		'type' => 'text',
+			// 		'text' => 'กินไรยัง?'
+			// 	];
+			// }
+			// else if (strpos($text, 'ยังเลย') !== false) {
+			// 	$messages = [
+			// 		'type' => 'text',
+			// 		'text' => 'กินไรดีล่ะ'
+			// 	];
+			// }
+			// else if (strpos($text, 'ยังไม่รู้เลยอ่ะ ช่วยคิดหน่อย') !== false) {
+			// 	$messages = [
+			// 		'type' => 'text',
+			// 		'text' => 'ชอบกินแนวไหนล่ะ'
+			// 	];
+			// }
+			// else if (strpos($text, '') !== false) {
+			// 	$messages = [
+			// 		'type' => 'text',
+			// 		'text' => ''
+			// 	];
+			// }
+			// else if (strpos($text, '') !== false) {
+			// 	$messages = [
+			// 		'type' => 'text',
+			// 		'text' => ''
+			// 	];
+			// }
+			// else if (strpos($text, 'แนะนำ') !== false) {
+			// 	$messages = [
+			// 		'type' => 'text',
+			// 		'text' => 'อยากกินอาหารประเภทไหน'
+			// 	];
+			// }
+
 			else if (strpos($text, 'ค้นหาร้าน') !== false)
 			{
 
