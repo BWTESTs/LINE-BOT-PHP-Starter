@@ -1,4 +1,6 @@
 <?php
+use LINE\LINEBot\Event\MessageEvent\LocationMessage;
+
 $access_token = '5eJQBT5OVKGnLsE6lXXUHhxo3ySkrok2TzSc+JbWs/I7l9jC91Ymn5WDELvNADkMjzirUo0XRjswVSHpIEoNyvEkaMPzHJfz6xyyIwo/H9yFVYtJbkKlYmX9bOWn9AIOur5vWMlhlU+xtEm3e9rNqAdB04t89/1O/w1cDnyilFU=';
 
 // Get POST body content
@@ -319,6 +321,7 @@ if (!is_null($events['events'])) {
 			}
 			else if (strpos($text, 'รอบตัว') !== false)
 			{
+				$testLocation = new LINE\LINEBot\Event\MessageEvent\LocationMessage();
 				$messages = [
 					'type' => 'template',
 					'altText' => 'this is a buttons template',
@@ -328,12 +331,21 @@ if (!is_null($events['events'])) {
 						//'thumbnailImageUrl' => 'https://example.com/bot/images/image.jpg',
 						//'title' => 'Menu',
 						'text' => 'ช่วยกดแชร์ Location มาให้เราหน่อย เดี๋ยวเราจะลองหาร้านแถวนั้นให้',
-						'actions' =>
+						'location' =>
+						//array (
+						//	array (
+						//		'type' => 'postback',
+						//		'label' => 'แชร์ Location',
+						//		'data' => 'action=location',
+						//	),
+						//),
 						array (
 							array (
-								'type' => 'postback',
-								'label' => 'แชร์ Location',
-								'data' => 'action=location',
+								'type' => 'location',
+								'title' => 'my location',
+								'address' => $testLocation->getAddress(),
+								'latitude' => $testLocation->getLatitude(),
+								'longitude' => $testLocation->getLongitude(),
 							),
 						),
 					),
