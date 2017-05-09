@@ -234,7 +234,7 @@ if (!is_null($events['events'])) {
 						  array (
 							  array (
 							    'type' => 'postback',
-							    'label' => 'กดเพื่อเลือก ก๋วยเตี๋ยว',
+							    'label' => 'กดเลือก ก๋วยเตี๋ยว',
 							    'data' => 'action=add&itemid=111',
 							    'text' => 'ก๋วยเตี๋ยว',
 							  ),
@@ -248,7 +248,7 @@ if (!is_null($events['events'])) {
 						array (
 						    array (
 							    'type' => 'postback',
-							    'label' => 'กดเพื่อเลือก สเต็ก',
+							    'label' => 'กดเลือก สเต็ก',
 							    'data' => 'action=add&itemid=111',
 							    'text' => 'สเต็ก',
 							  ),
@@ -262,7 +262,7 @@ if (!is_null($events['events'])) {
 						array (
 						    array (
 							    'type' => 'postback',
-							    'label' => 'กดเพื่อเลือก หมูกะทะ',
+							    'label' => 'กดเลือก หมูกะทะ',
 							    'data' => 'action=add&itemid=111',
 							    'text' => 'หมูกะทะ',
 							  ),
@@ -276,7 +276,7 @@ if (!is_null($events['events'])) {
 						array (
 						    array (
 							    'type' => 'postback',
-							    'label' => 'กดเพื่อเลือก ส้มตำ',
+							    'label' => 'กดเลือก ส้มตำ',
 							    'data' => 'action=add&itemid=111',
 							    'text' => 'ส้มตำ',
 							  ),
@@ -290,7 +290,7 @@ if (!is_null($events['events'])) {
 						array (
 						    array (
 							    'type' => 'postback',
-							    'label' => 'กดเพื่อเลือก อาหารญี่ปุ่น',
+							    'label' => 'กดเลือก อาหารญี่ปุ่น',
 							    'data' => 'action=add&itemid=111',
 							    'text' => 'อาหารญี่ปุ่น',
 							  ),
