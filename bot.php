@@ -319,6 +319,7 @@ if (!is_null($events['events'])) {
 			}
 			else if (strpos($text, 'รอบตัว') !== false)
 			{
+				$testlocation = new \LINE\LINEBot\Event\MessageEvent\LocationMessage;
 				$messages = [
 					'type' => 'template',
 					'altText' => 'this is a buttons template',
@@ -329,11 +330,20 @@ if (!is_null($events['events'])) {
 						//'title' => 'Menu',
 						'text' => 'ช่วยกดแชร์ Location มาให้เราหน่อย เดี๋ยวเราจะลองหาร้านแถวนั้นให้',
 						'actions' =>
+						//array (
+						//	array (
+						//		'type' => 'postback',
+						//		'label' => 'แชร์ Location',
+						//		'data' => 'action=location',
+						//	),
+						//),
 						array (
 							array (
-								'type' => 'postback',
-								'label' => 'แชร์ Location',
-								'data' => 'action=location',
+								'type' => 'location',
+								'title' => 'แชร์ Location',
+								'address' => '',
+								'latitude' => $testlocation->getLatitude(),
+								'longitude' => $testlocation->getLongitude(),
 							),
 						),
 					),
