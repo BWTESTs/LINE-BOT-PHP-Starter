@@ -333,7 +333,7 @@ if (!is_null($events['events'])) {
 							array (
 								'type' => 'postback',
 								'label' => 'แชร์ Location',
-								'data' => 'location',
+								'data' => 'action=location',
 							),
 						),
 					),
