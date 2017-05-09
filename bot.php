@@ -124,7 +124,7 @@ if (!is_null($events['events'])) {
 				'replyToken' => $replyToken,
 				'messages' => [$messages, $messages_2],
 			];
-			
+
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
 
@@ -234,7 +234,7 @@ if (!is_null($events['events'])) {
 						  array (
 							  array (
 							    'type' => 'postback',
-							    'label' => 'Select',
+							    'label' => 'กดเพื่อเลือก ก๋วยเตี๋ยว',
 							    'data' => 'action=add&itemid=111',
 							    'text' => 'ก๋วยเตี๋ยว',
 							  ),
@@ -248,7 +248,7 @@ if (!is_null($events['events'])) {
 						array (
 						    array (
 							    'type' => 'postback',
-							    'label' => 'Select',
+							    'label' => 'กดเพื่อเลือก สเต็ก',
 							    'data' => 'action=add&itemid=111',
 							    'text' => 'สเต็ก',
 							  ),
@@ -262,7 +262,7 @@ if (!is_null($events['events'])) {
 						array (
 						    array (
 							    'type' => 'postback',
-							    'label' => 'Select',
+							    'label' => 'กดเพื่อเลือก หมูกะทะ',
 							    'data' => 'action=add&itemid=111',
 							    'text' => 'หมูกะทะ',
 							  ),
@@ -276,7 +276,7 @@ if (!is_null($events['events'])) {
 						array (
 						    array (
 							    'type' => 'postback',
-							    'label' => 'Select',
+							    'label' => 'กดเพื่อเลือก ส้มตำ',
 							    'data' => 'action=add&itemid=111',
 							    'text' => 'ส้มตำ',
 							  ),
@@ -290,7 +290,7 @@ if (!is_null($events['events'])) {
 						array (
 						    array (
 							    'type' => 'postback',
-							    'label' => 'Select',
+							    'label' => 'กดเพื่อเลือก อาหารญี่ปุ่น',
 							    'data' => 'action=add&itemid=111',
 							    'text' => 'อาหารญี่ปุ่น',
 							  ),
@@ -336,7 +336,7 @@ if (!is_null($events['events'])) {
 								'data' => 'action=location',
 							),
 						),
-						
+
 					),
 				];
 				$data = [
