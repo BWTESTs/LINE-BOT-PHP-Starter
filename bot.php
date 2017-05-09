@@ -353,13 +353,9 @@ if (!is_null($events['events'])) {
 				$messages = [
 					'type' => 'location',
 					'title' => 'my location',
-					'address' => $testLocation->getAddress(),
-					'latitude' => $testLocation->getLatitude(),
-					'longitude' => $testLocation->getLongitude(),
-				];
-				$data = [
-					'replyToken' => $replyToken,
-					'messages' => [$messages],
+					'address' => '$testLocation->getAddress()',
+					'latitude' => '$testLocation->getLatitude()',
+					'longitude' => '$testLocation->getLongitude()',
 				];
 			}
 			else if (strpos($text, 'ไม่โดนใจ') !== false)
@@ -1008,6 +1004,10 @@ if (!is_null($events['events'])) {
 					  'text' => 'โทษที...เราไม่เข้าใจ'
 				];
 			}
+			$data = [
+				'replyToken' => $replyToken,
+				'messages' => [$messages],
+			];
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
 
