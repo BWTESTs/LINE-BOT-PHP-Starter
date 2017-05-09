@@ -329,7 +329,7 @@ if (!is_null($events['events'])) {
 						//'thumbnailImageUrl' => 'https://example.com/bot/images/image.jpg',
 						//'title' => 'Menu',
 						'text' => 'ช่วยกดแชร์ Location มาให้เราหน่อย เดี๋ยวเราจะลองหาร้านแถวนั้นให้',
-						'actions' =>
+						'location' =>
 						//array (
 						//	array (
 						//		'type' => 'postback',
