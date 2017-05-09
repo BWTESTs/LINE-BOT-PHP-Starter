@@ -1,6 +1,4 @@
 <?php
-use LINE\LINEBot\Event\MessageEvent\LocationMessage;
-
 $access_token = '5eJQBT5OVKGnLsE6lXXUHhxo3ySkrok2TzSc+JbWs/I7l9jC91Ymn5WDELvNADkMjzirUo0XRjswVSHpIEoNyvEkaMPzHJfz6xyyIwo/H9yFVYtJbkKlYmX9bOWn9AIOur5vWMlhlU+xtEm3e9rNqAdB04t89/1O/w1cDnyilFU=';
 
 // Get POST body content
@@ -336,7 +334,6 @@ if (!is_null($events['events'])) {
 								'type' => 'postback',
 								'label' => 'แชร์ Location',
 								'data' => 'action=location',
-								'text' => 'location',
 							),
 						),
 						
@@ -345,24 +342,6 @@ if (!is_null($events['events'])) {
 				$data = [
 					'replyToken' => $replyToken,
 					'messages' => [$messages],
-				];
-			}
-			else if (strpos($text, 'location') !== false)
-			{
-				$address = 0;
-				$latitude = 0;
-				$longitude = 0;
-				if  ($event instanceof LINE\LINEBot\Event\MessageEvent\LocationMessage) {
-					$address = $event.getAddress();
-					$latitude = $event.getLatitude();
-					$longitude = $event.getLongitude();
-				}
-				$messages = [
-					'type' => 'location',
-					'title' => 'my location',
-					'address' => $address,
-					'latitude' => $latitude,
-					'longitude' => $longitude,
 				];
 			}
 			else if (strpos($text, 'ไม่โดนใจ') !== false)
