@@ -331,9 +331,12 @@ if (!is_null($events['events'])) {
 						'actions' =>
 						array (
 							array (
-								'type' => 'postback',
-								'label' => 'แชร์ Location',
-								'data' => 'action=buy&itemid=123',
+								//'type' => 'postback',
+								//'label' => 'แชร์ Location',
+								//'data' => 'action=buy&itemid=123',
+								'type' => 'location',
+								'title' => 'แชร์ Location',
+								'label' => 'View detail',
 							),
 						),
 					),
