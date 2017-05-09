@@ -671,6 +671,10 @@ if (!is_null($events['events'])) {
 					    ),
 					  ),
 				];
+				$data = [
+					'replyToken' => $replyToken,
+					'messages' => [$messages],
+				];
 			}
 			else if (strpos($text, 'หมูกะทะ') !== false)
 			{
@@ -774,6 +778,10 @@ if (!is_null($events['events'])) {
 					      ),
 					    ),
 					  ),
+				];
+				$data = [
+					'replyToken' => $replyToken,
+					'messages' => [$messages],
 				];
 			}
 			else if (strpos($text, 'ส้มตำ') !== false)
@@ -879,6 +887,10 @@ if (!is_null($events['events'])) {
 					    ),
 					  ),
 				];
+				$data = [
+					'replyToken' => $replyToken,
+					'messages' => [$messages],
+				];
 			}
 			else if (strpos($text, 'อาหารญี่ปุ่น') !== false)
 			{
@@ -983,15 +995,30 @@ if (!is_null($events['events'])) {
 					    ),
 					  ),
 				];
+				$data = [
+					'replyToken' => $replyToken,
+					'messages' => [$messages],
+				];
 			}
 			else if (strpos($text, 'สูตรอาหาร') !== false)
 			{
-
+				$messages = [
+					  'type' => 'text',
+					  'text' => 'ค้นหาสูตรอาหาร'
+				];
+				$data = [
+					'replyToken' => $replyToken,
+					'messages' => [$messages],
+				];
 			}
 			else {
 				$messages = [
 					  'type' => 'text',
 					  'text' => 'โทษที...เราไม่เข้าใจ'
+				];
+				$data = [
+					'replyToken' => $replyToken,
+					'messages' => [$messages],
 				];
 			}
 // 			$data = [
