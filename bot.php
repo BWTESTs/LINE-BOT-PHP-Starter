@@ -344,6 +344,13 @@ if (!is_null($events['events'])) {
 					'messages' => [$messages],
 				];
 			}
+			else if (strpos($text, 'location') !== false)
+			{
+				$messages = [
+					'type' => 'location',
+					'title' => 'my location',
+				];
+			}
 			else if (strpos($text, 'ไม่โดนใจ') !== false)
 			{
 				$messages = [
