@@ -337,7 +337,7 @@ if (!is_null($events['events'])) {
 							//),
 							array (
 							  'type' => 'imagemap',
-							  'baseUrl' => 'https://example.com/bot/images/rm001',
+							  'baseUrl' => 'https://commons.wikimedia.org/wiki/File:Stonehenge.jpg',
 							  'altText' => 'this is an imagemap',
 							  'baseSize' => 
 							  array (
@@ -348,7 +348,7 @@ if (!is_null($events['events'])) {
 							  array (
 							    array (
 							      'type' => 'uri',
-							      'linkUri' => 'https://example.com/',
+							      'linkUri' => 'https://commons.wikimedia.org/wiki/File:Stonehenge.jpg',
 							      'area' => 
 							      array (
 								'x' => 0,
