@@ -320,7 +320,7 @@ if (!is_null($events['events'])) {
 			else if (strpos($text, 'รอบตัว') !== false)
 			{
 				$testlocation = new \LINE\LINEBot\Event\MessageEvent\LocationMessage();
-				echo 'location -> '.$testlocation->getLatitude().','.$testlocation->getLongitude();
+				echo "location -> ".$testlocation->getLatitude().",".$testlocation->getLongitude();
 				$messages = [
 					'type' => 'template',
 					'altText' => 'this is a buttons template',
