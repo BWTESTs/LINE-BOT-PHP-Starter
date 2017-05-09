@@ -351,10 +351,10 @@ if (!is_null($events['events'])) {
 				$address = 0;
 				$latitude = 0;
 				$longitude = 0;
-				if  ($location instanceof LINE\LINEBot\Event\MessageEvent\LocationMessage) {
-					$address = $location.getAddress();
-					$latitude = $location.getLatitude();
-					$longitude = $location.getLongitude();
+				if  ($event instanceof LINE\LINEBot\Event\MessageEvent\LocationMessage) {
+					$address = $event.getAddress();
+					$latitude = $event.getLatitude();
+					$longitude = $event.getLongitude();
 				}
 				$messages = [
 					'type' => 'location',
