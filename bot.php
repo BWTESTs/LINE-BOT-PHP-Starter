@@ -255,7 +255,7 @@ if (!is_null($events['events'])) {
 						  ),
 					      ),
 					      array (
-						/'thumbnailImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/%E0%B8%AA%E0%B9%89%E0%B8%A1%E0%B8%95%E0%B8%B3_1000px.jpg',
+						'thumbnailImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/%E0%B8%AA%E0%B9%89%E0%B8%A1%E0%B8%95%E0%B8%B3_1000px.jpg',
 						'title' => 'หมูกะทะ',
 						'text' => 'description',
 						'actions' =>
