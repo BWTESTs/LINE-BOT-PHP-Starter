@@ -328,12 +328,19 @@ if (!is_null($events['events'])) {
 						//'thumbnailImageUrl' => 'https://example.com/bot/images/image.jpg',
 						//'title' => 'Menu',
 						'text' => 'ช่วยกดแชร์ Location มาให้เราหน่อย เดี๋ยวเราจะลองหาร้านแถวนั้นให้',
-						'actions' =>
+						//'actions' =>
+						//array (
+						//	array (
+						//		'type' => 'postback',
+						//		'label' => 'แชร์ Location',
+						//		'data' => 'action=location',
+						//	),
+						//),
+						'buttons' =>
 						array (
 							array (
-								'type' => 'postback',
-								'label' => 'แชร์ Location',
-								'data' => 'action=location',
+								'type' => 'location',
+								'title' => 'แชร์ Location',
 							),
 						),
 					),
