@@ -340,7 +340,7 @@ if (!is_null($events['events'])) {
 							array (
 								'type' => 'uri',
 								'label' => 'แชร์ Location',
-								'uri' => 'https://www.google.co.th/maps/place/14%C2%B001'30.4%22N+100%C2%B037'10.0%22E/@14.0251211,100.6172639,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d14.0251159!4d100.6194526?hl=th',
+								'uri' => 'https://www.google.co.th/maps/place/14%C2%B00130.4%22N+100%C2%B03710.0%22E/@14.0251211,100.6172639,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d14.0251159!4d100.6194526?hl=th',
 							),
 						),
 					),
