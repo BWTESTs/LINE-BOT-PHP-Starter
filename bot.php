@@ -26,7 +26,7 @@ if (!is_null($events['events'])) {
 			      array (
 				'thumbnailImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/%E0%B8%AA%E0%B9%89%E0%B8%A1%E0%B8%95%E0%B8%B3_1000px.jpg',
 				'title' => 'ร้าน พี่อ้อ ก๋วยเตี๋ยวต้มยำ',
-				'text' => 'เด็ดที่รสชาติ การใช้วัตถุดิบปัง ราคาแพงลิ่ว และได้มาดูพี่อ้อเจ้าของที่ทั้งสวยและเซ็กซี่',
+				'text' => 'เด็ดที่รสชาติ การใช้วัตถุดิบปัง ราคาแพงลิ่ว',
 				'actions' =>
 				  array (
 					  array (
@@ -44,7 +44,7 @@ if (!is_null($events['events'])) {
 			      array (
 				'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/05/15/fa90d9d1578a4679981de801f2e47e85.jpg',
 				'title' => 'ร้าน รุ่งเรือง ก๋วยเตี๋ยวหมู',
-				'text' => 'ก๋วยเตี๋ยวหมูลูกชิ้นปลารสชาติคลาสสิคร้านดัง ที่มีคนต่อคิวจนล้นร้าน',
+				'text' => 'ก๋วยเตี๋ยวหมูลูกชิ้นปลารสชาติคลาสสิคร้านดัง',
 				'actions' =>
 				array (
 					  array (
@@ -562,6 +562,10 @@ if (!is_null($events['events'])) {
 					      ),
 					    ),
 					  ),
+				];
+				$data = [
+					'replyToken' => $replyToken,
+					'messages' => [$messages],
 				];
 			}
 			else if (strpos($text, 'สเต็ก') !== false)
