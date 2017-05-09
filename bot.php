@@ -349,13 +349,17 @@ if (!is_null($events['events'])) {
 			}
 			else if (strpos($text, 'location') !== false)
 			{
-				$testLocation = new LINE\LINEBot\Event\MessageEvent\LocationMessage();
+				if  ($location instanceof LINE\LINEBot\Event\MessageEvent\LocationMessage) {\
+					$address = $location.getAddress();
+					$latitude = $location.getLatitude();
+					$longitude = $location.getLongitude();
+				}
 				$messages = [
 					'type' => 'location',
 					'title' => 'my location',
-					'address' => '$testLocation->getAddress()',
-					'latitude' => '$testLocation->getLatitude()',
-					'longitude' => '$testLocation->getLongitude()',
+					'address' => $address,
+					'latitude' => $latitude,
+					'longitude' => $longitude,
 				];
 			}
 			else if (strpos($text, 'ไม่โดนใจ') !== false)
