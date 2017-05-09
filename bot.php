@@ -336,7 +336,6 @@ if (!is_null($events['events'])) {
 								//'data' => 'action=buy&itemid=123',
 								'type' => 'location',
 								'title' => 'แชร์ Location',
-								'label' => 'View detail',
 							),
 						),
 					),
