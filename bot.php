@@ -319,8 +319,6 @@ if (!is_null($events['events'])) {
 			}
 			else if (strpos($text, 'รอบตัว') !== false)
 			{
-				$testlocation = new \LINE\LINEBot\Event\MessageEvent\LocationMessage();
-				echo "location -> ".$testlocation->getLatitude().",".$testlocation->getLongitude();
 				$messages = [
 					'type' => 'template',
 					'altText' => 'this is a buttons template',
@@ -1007,9 +1005,9 @@ if (!is_null($events['events'])) {
 			$result = curl_exec($ch);
 			curl_close($ch);
 
-//			echo $result . "\r\n";
+			echo $result . "\r\n";
 		}
 	}
 }
-//echo "OK";
+echo "OK";
 ?>
