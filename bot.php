@@ -330,45 +330,10 @@ if (!is_null($events['events'])) {
 						'text' => 'ช่วยกดแชร์ Location มาให้เราหน่อย เดี๋ยวเราจะลองหาร้านแถวนั้นให้',
 						'actions' =>
 						array (
-							//array (
-							//	'type' => 'postback',
-							//	'label' => 'แชร์ Location',
-							//	'data' => 'action=location',
-							//),
 							array (
-							  'type' => 'imagemap',
-							  'baseUrl' => 'https://commons.wikimedia.org/wiki/File:Stonehenge.jpg',
-							  'altText' => 'this is an imagemap',
-							  'baseSize' => 
-							  array (
-							    'height' => 1040,
-							    'width' => 1040,
-							  ),
-							  'actions' => 
-							  array (
-							    array (
-							      'type' => 'uri',
-							      'linkUri' => 'https://commons.wikimedia.org/wiki/File:Stonehenge.jpg',
-							      'area' => 
-							      array (
-								'x' => 0,
-								'y' => 0,
-								'width' => 520,
-								'height' => 1040,
-							      ),
-							    ),
-							    array (
-							      'type' => 'message',
-							      'text' => 'hello',
-							      'area' => 
-							      array (
-								'x' => 520,
-								'y' => 0,
-								'width' => 520,
-								'height' => 1040,
-							      ),
-							    ),
-							  ),
+								'type' => 'postback',
+								'label' => 'แชร์ Location',
+								'data' => 'action=location',
 							),
 						),
 					),
