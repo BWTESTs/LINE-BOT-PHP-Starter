@@ -321,7 +321,6 @@ if (!is_null($events['events'])) {
 			}
 			else if (strpos($text, 'รอบตัว') !== false)
 			{
-				$testLocation = new LINE\LINEBot\Event\MessageEvent\LocationMessage();
 				$messages = [
 					'type' => 'template',
 					'altText' => 'this is a buttons template',
@@ -331,28 +330,31 @@ if (!is_null($events['events'])) {
 						//'thumbnailImageUrl' => 'https://example.com/bot/images/image.jpg',
 						//'title' => 'Menu',
 						'text' => 'ช่วยกดแชร์ Location มาให้เราหน่อย เดี๋ยวเราจะลองหาร้านแถวนั้นให้',
-						'location' =>
-						//array (
-						//	array (
-						//		'type' => 'postback',
-						//		'label' => 'แชร์ Location',
-						//		'data' => 'action=location',
-						//	),
-						//),
+						'actions' =>
 						array (
 							array (
-								'type' => 'location',
-								'title' => 'my location',
-								'address' => $testLocation->getAddress(),
-								'latitude' => $testLocation->getLatitude(),
-								'longitude' => $testLocation->getLongitude(),
+								'type' => 'postback',
+								'label' => 'แชร์ Location',
+								'data' => 'action=location',
 							),
 						),
+						
 					),
 				];
 				$data = [
 					'replyToken' => $replyToken,
 					'messages' => [$messages],
+				];
+			}
+			else if (strpos($text, 'location') !== false)
+			{
+				$testLocation = new LINE\LINEBot\Event\MessageEvent\LocationMessage();
+				$messages = [
+					'type' => 'location',
+					'title' => 'my location',
+					'address' => $testLocation->getAddress(),
+					'latitude' => $testLocation->getLatitude(),
+					'longitude' => $testLocation->getLongitude(),
 				];
 			}
 			else if (strpos($text, 'ไม่โดนใจ') !== false)
@@ -1001,6 +1003,10 @@ if (!is_null($events['events'])) {
 					  'text' => 'โทษที...เราไม่เข้าใจ'
 				];
 			}
+			$data = [
+				'replyToken' => $replyToken,
+				'messages' => [$messages],
+			];
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
 
