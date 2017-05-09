@@ -122,7 +122,7 @@ if (!is_null($events['events'])) {
 			];
 			$data = [
 				'replyToken' => $replyToken,
-				'messages' => [$messages,$messages_2],
+				'messages' => [$messages, $messages_2],
 			];
 			
 			// Make a POST Request to Messaging API to reply to sender
@@ -990,10 +990,10 @@ if (!is_null($events['events'])) {
 					  'text' => 'โทษที...เราไม่เข้าใจ'
 				];
 			}
-			$data = [
-				'replyToken' => $replyToken,
-				'messages' => [$messages],
-			];
+// 			$data = [
+// 				'replyToken' => $replyToken,
+// 				'messages' => [$messages],
+// 			];
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
 
