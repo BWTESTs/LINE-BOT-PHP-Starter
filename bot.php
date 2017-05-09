@@ -269,7 +269,7 @@ if (!is_null($events['events'])) {
 						  ),
 					      ),
 					      array (
-						'thumbnailImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/ส้มตำ_1000px.jpg',
+						//'thumbnailImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/ส้มตำ_1000px.jpg',
 						'title' => 'ส้มตำ',
 						'text' => 'description',
 						'actions' =>
