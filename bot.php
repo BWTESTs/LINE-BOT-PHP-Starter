@@ -349,7 +349,7 @@ if (!is_null($events['events'])) {
 			}
 			else if (strpos($text, 'location') !== false)
 			{
-				if  ($location instanceof LINE\LINEBot\Event\MessageEvent\LocationMessage) {\
+				if  ($location instanceof LINE\LINEBot\Event\MessageEvent\LocationMessage) {
 					$address = $location.getAddress();
 					$latitude = $location.getLatitude();
 					$longitude = $location.getLongitude();
