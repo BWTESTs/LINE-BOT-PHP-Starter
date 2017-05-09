@@ -24,7 +24,7 @@ if (!is_null($events['events'])) {
 			    'columns' =>
 			    array (
 			      array (
-				'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/02/22/cac93497800a43aabd8b7feae8053ed7.jpg',
+				'thumbnailImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/%E0%B8%AA%E0%B9%89%E0%B8%A1%E0%B8%95%E0%B8%B3_1000px.jpg',
 				'title' => 'ร้าน พี่อ้อ ก๋วยเตี๋ยวต้มยำ',
 				'text' => 'description',
 				'actions' =>
