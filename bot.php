@@ -26,7 +26,7 @@ if (!is_null($events['events'])) {
 			      array (
 				'thumbnailImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/%E0%B8%AA%E0%B9%89%E0%B8%A1%E0%B8%95%E0%B8%B3_1000px.jpg',
 				'title' => 'ร้าน พี่อ้อ ก๋วยเตี๋ยวต้มยำ',
-				'text' => 'description',
+				'text' => 'เด็ดที่รสชาติ การใช้วัตถุดิบปัง ราคาแพงลิ่ว และได้มาดูพี่อ้อเจ้าของที่ทั้งสวยและเซ็กซี่ (..แต่วันนี้ออดดูจ้ะ)ไว้ค่อยไปหา "พี่อ้อ" ที่ร้าน น้าาา',
 				'actions' =>
 				  array (
 					  array (
@@ -44,7 +44,7 @@ if (!is_null($events['events'])) {
 			      array (
 				'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/05/15/fa90d9d1578a4679981de801f2e47e85.jpg',
 				'title' => 'ร้าน รุ่งเรือง ก๋วยเตี๋ยวหมู',
-				'text' => 'description',
+				'text' => 'ก๋วยเตี๋ยวหมูลูกชิ้นปลารสชาติคลาสสิค ก๋วยเตี๋ยวหมูร้านดัง ที่มีคนต่อคิวจนล้นร้าน',
 				'actions' =>
 				array (
 					  array (
@@ -62,7 +62,7 @@ if (!is_null($events['events'])) {
 			      array (
 				'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/07/06/a924ead1af68471caa4882bf192d0be2.jpg',
 				'title' => 'ร้าน รวยแซ่บ ก๋วยเตี๋ยวต้มยำไข่หวาน',
-				'text' => 'description',
+				'text' => 'มาม่าไข่หวาน อร่อยอ่าาา ชามใหญ่ เครื่องเยอะ รสชาติเข้มข้น',
 				'actions' =>
 				array (
 					  array (
@@ -80,7 +80,7 @@ if (!is_null($events['events'])) {
 			      array (
 				'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/01/14/a991d52eb630401e932e8eee55a86974.jpg',
 				'title' => 'ร้าน เหล่ากุ้ย บะหมี่อัศวิน',
-				'text' => 'description',
+				'text' => 'ลองสั่งมาทานที่บ้าน',
 				'actions' =>
 				array (
 					  array (
@@ -98,7 +98,7 @@ if (!is_null($events['events'])) {
 			      array (
 				'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2012/04/28/a9bd566389c14e3fbb55ba66efe87406.jpg',
 				'title' => 'ร้าน โกบู้รสซิ่ง',
-				'text' => 'description',
+				'text' => 'สมกับที่ดั้นด้นมากินให้ได้ อร่อยจริง แม้จะแพงไปนิด เปิด 24 ช.ม.',
 				'actions' =>
 				array (
 					  array (
