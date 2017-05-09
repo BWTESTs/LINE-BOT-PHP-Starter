@@ -334,7 +334,6 @@ if (!is_null($events['events'])) {
 								'type' => 'postback',
 								'label' => 'แชร์ Location',
 								'data' => 'action=location',
-								'text' => 'location',
 							),
 						),
 					),
@@ -342,16 +341,6 @@ if (!is_null($events['events'])) {
 				$data = [
 					'replyToken' => $replyToken,
 					'messages' => [$messages],
-				];
-			}
-			else if (strpos($text, 'location') !== false)
-			{
-				$messages = [
-					'type' => 'location',
-					'title' => 'my location',
-					'address': '13 คลองหลวง 26 ตำบล คลองหนึ่ง อำเภอ คลองหลวง ปทุมธานี 12120 ประเทศไทย',
-					'latitude': '14.02511586234878',
-					'longitude': '100.61945255845785',
 				];
 			}
 			else if (strpos($text, 'ไม่โดนใจ') !== false)
