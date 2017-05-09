@@ -24,7 +24,7 @@ if (!is_null($events['events'])) {
 			    'columns' =>
 			    array (
 			      array (
-				'thumbnailImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/%E0%B8%AA%E0%B9%89%E0%B8%A1%E0%B8%95%E0%B8%B3_1000px.jpg',
+				'thumbnailImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/noodle/%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%9E%E0%B8%B5%E0%B9%88%E0%B8%AD%E0%B9%89%E0%B8%AD%E0%B8%81%E0%B9%8B%E0%B8%A7%E0%B8%A2%E0%B9%80%E0%B8%95%E0%B8%B5%E0%B9%8B%E0%B8%A2%E0%B8%A7%E0%B8%95%E0%B9%89%E0%B8%A1%E0%B8%A2%E0%B8%B3.jpg',
 				'title' => 'ร้าน พี่อ้อ ก๋วยเตี๋ยวต้มยำ',
 				'text' => 'เด็ดที่รสชาติ การใช้วัตถุดิบปัง ราคาแพงลิ่ว',
 				'actions' =>
@@ -42,7 +42,7 @@ if (!is_null($events['events'])) {
 				  ),
 			      ),
 			      array (
-				'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/05/15/fa90d9d1578a4679981de801f2e47e85.jpg',
+				'thumbnailImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/noodle/%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%A3%E0%B8%B8%E0%B9%88%E0%B8%87%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B9%8B%E0%B8%A7%E0%B8%A2%E0%B9%80%E0%B8%95%E0%B8%B5%E0%B9%8B%E0%B8%A2%E0%B8%A7%E0%B8%AB%E0%B8%A1%E0%B8%B9.jpg',
 				'title' => 'ร้าน รุ่งเรือง ก๋วยเตี๋ยวหมู',
 				'text' => 'ก๋วยเตี๋ยวหมูลูกชิ้นปลารสชาติคลาสสิคร้านดัง',
 				'actions' =>
@@ -60,7 +60,7 @@ if (!is_null($events['events'])) {
 				  ),
 			      ),
 			      array (
-				'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/07/06/a924ead1af68471caa4882bf192d0be2.jpg',
+				'thumbnailImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/noodle/%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%A3%E0%B8%A7%E0%B8%A2%E0%B9%81%E0%B8%8B%E0%B9%88%E0%B8%9A%E0%B8%81%E0%B9%8B%E0%B8%A7%E0%B8%A2%E0%B9%80%E0%B8%95%E0%B8%B5%E0%B9%8B%E0%B8%A2%E0%B8%A7%E0%B8%95%E0%B9%89%E0%B8%A1%E0%B8%A2%E0%B8%B3%E0%B9%84%E0%B8%82%E0%B9%88%E0%B8%AB%E0%B8%A7%E0%B8%B2%E0%B8%99.jpg',
 				'title' => 'ร้าน รวยแซ่บ ก๋วยเตี๋ยวต้มยำไข่หวาน',
 				'text' => 'มาม่าไข่หวานอร่อยอ่าาา ชามใหญ่ เครื่องเยอะ รสชาติเข้มข้น',
 				'actions' =>
@@ -78,7 +78,7 @@ if (!is_null($events['events'])) {
 				  ),
 			      ),
 			      array (
-				'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/01/14/a991d52eb630401e932e8eee55a86974.jpg',
+				'thumbnailImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/noodle/%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B9%80%E0%B8%AB%E0%B8%A5%E0%B9%88%E0%B8%B2%E0%B8%81%E0%B8%B8%E0%B9%89%E0%B8%A2%E0%B8%9A%E0%B8%B0%E0%B8%AB%E0%B8%A1%E0%B8%B5%E0%B9%88%E0%B8%AD%E0%B8%B1%E0%B8%A8%E0%B8%A7%E0%B8%B4%E0%B8%99.jpg',
 				'title' => 'ร้าน เหล่ากุ้ย บะหมี่อัศวิน',
 				'text' => 'ลองสั่งมาทานที่บ้าน',
 				'actions' =>
@@ -96,7 +96,7 @@ if (!is_null($events['events'])) {
 				  ),
 			      ),
 			      array (
-				'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2012/04/28/a9bd566389c14e3fbb55ba66efe87406.jpg',
+				'thumbnailImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/noodle/%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B9%82%E0%B8%81%E0%B8%9A%E0%B8%B9%E0%B9%89%E0%B8%A3%E0%B8%AA%E0%B8%8B%E0%B8%B4%E0%B9%88%E0%B8%87.jpg',
 				'title' => 'ร้าน โกบู้รสซิ่ง',
 				'text' => 'สมกับที่ดั้นด้นมากินให้ได้ อร่อยจริง แม้จะแพงไปนิด',
 				'actions' =>
@@ -236,7 +236,7 @@ if (!is_null($events['events'])) {
 							    'type' => 'postback',
 							    'label' => 'กดเลือก ก๋วยเตี๋ยว',
 							    'data' => 'action=add&itemid=111',
-							    'text' => 'ก๋วยเตี๋ยว',
+							    'text' => 'เราเลือกก๋วยเตี๋ยว',
 							  ),
 						  ),
 					      ),
@@ -250,7 +250,7 @@ if (!is_null($events['events'])) {
 							    'type' => 'postback',
 							    'label' => 'กดเลือก สเต็ก',
 							    'data' => 'action=add&itemid=111',
-							    'text' => 'สเต็ก',
+							    'text' => 'เราเลือกสเต็ก',
 							  ),
 						  ),
 					      ),
@@ -264,7 +264,7 @@ if (!is_null($events['events'])) {
 							    'type' => 'postback',
 							    'label' => 'กดเลือก หมูกะทะ',
 							    'data' => 'action=add&itemid=111',
-							    'text' => 'หมูกะทะ',
+							    'text' => 'เราเลือกหมูกะทะ',
 							  ),
 						  ),
 					      ),
@@ -278,7 +278,7 @@ if (!is_null($events['events'])) {
 							    'type' => 'postback',
 							    'label' => 'กดเลือก ส้มตำ',
 							    'data' => 'action=add&itemid=111',
-							    'text' => 'ส้มตำ',
+							    'text' => 'เราเลือกส้มตำ',
 							  ),
 						  ),
 					      ),
@@ -292,7 +292,7 @@ if (!is_null($events['events'])) {
 							    'type' => 'postback',
 							    'label' => 'กดเลือก อาหารญี่ปุ่น',
 							    'data' => 'action=add&itemid=111',
-							    'text' => 'อาหารญี่ปุ่น',
+							    'text' => 'เราเลือกอาหารญี่ปุ่น',
 							  ),
 						  ),
 					      ),
@@ -304,9 +304,9 @@ if (!is_null($events['events'])) {
 					'messages' => [$messages, $messages_2],
 				];
 			}
-			else if (strpos($text, 'ก๋วยเตี๋ยว') !== false || strpos($text, 'สเต็ก') !== false ||
-							strpos($text, 'หมูกระทะ') !== false || strpos($text, 'ส้มตำ') !== false ||
-							strpos($text, 'อาหารญี่ปุ่น') !== false)
+			else if (strpos($text, 'เราเลือกก๋วยเตี๋ยว') !== false || strpos($text, 'เราเลือกสเต็ก') !== false ||
+							strpos($text, 'เราเลือกหมูกระทะ') !== false || strpos($text, 'เราเลือกส้มตำ') !== false ||
+							strpos($text, 'เราเลือกอาหารญี่ปุ่น') !== false)
 			{
 				$messages = [
 					'type' => 'text',
