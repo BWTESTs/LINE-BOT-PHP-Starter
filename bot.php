@@ -329,11 +329,18 @@ if (!is_null($events['events'])) {
 						//'title' => 'Menu',
 						'text' => 'ช่วยกดแชร์ Location มาให้เราหน่อย เดี๋ยวเราจะลองหาร้านแถวนั้นให้',
 						'actions' =>
+						//array (
+						//	array (
+						//		'type' => 'postback',
+						//		'label' => 'แชร์ Location',
+						//		'data' => 'action=location',
+						//	),
+						//),
 						array (
 							array (
-								'type' => 'postback',
+								'type' => 'uri',
 								'label' => 'แชร์ Location',
-								'data' => 'action=location',
+								'uri' => 'https://www.google.co.th/maps/place/14%C2%B001'30.4%22N+100%C2%B037'10.0%22E/@14.0251211,100.6172639,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d14.0251159!4d100.6194526?hl=th',
 							),
 						),
 					),
