@@ -320,6 +320,7 @@ if (!is_null($events['events'])) {
 			else if (strpos($text, 'รอบตัว') !== false)
 			{
 				$testlocation = new \LINE\LINEBot\Event\MessageEvent\LocationMessage;
+				echo 'location -> '.$testlocation->getLatitude().','.$testlocation->getLongitude();
 				$messages = [
 					'type' => 'template',
 					'altText' => 'this is a buttons template',
@@ -329,21 +330,12 @@ if (!is_null($events['events'])) {
 						//'thumbnailImageUrl' => 'https://example.com/bot/images/image.jpg',
 						//'title' => 'Menu',
 						'text' => 'ช่วยกดแชร์ Location มาให้เราหน่อย เดี๋ยวเราจะลองหาร้านแถวนั้นให้',
-						'location' =>
-						//array (
-						//	array (
-						//		'type' => 'postback',
-						//		'label' => 'แชร์ Location',
-						//		'data' => 'action=location',
-						//	),
-						//),
+						'actions' =>
 						array (
 							array (
-								'type' => 'location',
-								'title' => 'แชร์ Location',
-								'address' => '',
-								'latitude' => $testlocation->getLatitude(),
-								'longitude' => $testlocation->getLongitude(),
+								'type' => 'postback',
+								'label' => 'แชร์ Location',
+								'data' => 'action=location',
 							),
 						),
 					),
@@ -1015,9 +1007,9 @@ if (!is_null($events['events'])) {
 			$result = curl_exec($ch);
 			curl_close($ch);
 
-			echo $result . "\r\n";
+//			echo $result . "\r\n";
 		}
 	}
 }
-echo "OK";
+//echo "OK";
 ?>
