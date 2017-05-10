@@ -183,9 +183,26 @@ if (!is_null($events['events'])) {
 				];
 			}
 			else if (strpos($text, 'สิงหา') !== false || strpos($text, 'เฮ้ย') !== false) {
+
+				$user_name = '';
+				$file = fopen("filename.dat", "r");
+				if ($file) {
+					while (($line = fgets($file)) !== false) {
+						// process the line read.
+						$data = explode("|", $line);
+						if ($data[0] == $userId) {
+							$user_name = $data[1];
+						}
+					}
+					fclose($file);
+				} else {
+					// error opening the file.
+				}
+
+
 				$messages = [
 					'type' => 'text',
-					'text' => 'ว่าไง'
+					'text' => 'ว่าไง' . $user_name
 				];
 				$data = [
 					'replyToken' => $replyToken,
@@ -203,10 +220,33 @@ if (!is_null($events['events'])) {
 					'messages' => [$messages],
 				];
 			}
-			else if (strpos($text, 'แบงค์') !== false) {
+			else if (strpos($text, 'ชื่อ') !== false) {
+				$user_name = trim(explode(" ",trim(explode("ชื่อ", $text)[1]))[0]);
+
+				$file = fopen("filename.dat", "r+");
+				if ($file) {
+					while (($line = fgets($file)) !== false) {
+						// process the line read.
+						$data = explode("|", $line);
+						if ($data[0] == $userId) {
+							// remove userId
+						}
+						else {
+							// write other userId
+							fwrite($file, $line . '\n');
+						}
+					}
+					// write userId with new name
+					fwrite($file, $userId . '|' . $user_name . '\n');
+
+					fclose($file);
+				} else {
+					// error opening the file.
+				}
+
 				$messages = [
 					'type' => 'text',
-					'text' => 'ยินดีที่ได้รู้จักนะแบงค์'
+					'text' => 'ยินดีที่ได้รู้จักนะ' . $user_name
 				];
 				$messages_2 = [
 					'type' => 'text',
@@ -333,9 +373,24 @@ if (!is_null($events['events'])) {
 							strpos($text, 'เราเลือกหมูกระทะ') !== false || strpos($text, 'เราเลือกส้มตำ') !== false ||
 							strpos($text, 'เราเลือกอาหารญี่ปุ่น') !== false)
 			{
+				$user_name = 'คุณ';
+				$file = fopen("filename.dat", "r");
+				if ($file) {
+					while (($line = fgets($file)) !== false) {
+						// process the line read.
+						$data = explode("|", $line);
+						if ($data[0] == $userId) {
+							$user_name = $data[1];
+						}
+					}
+					fclose($file);
+				} else {
+					// error opening the file.
+				}
+
 				$messages = [
 					'type' => 'text',
-					'text' => 'เอาร้านรอบตัวแบงค์มั้ย หรือหาร้านแถวไหนดี?'
+					'text' => 'เอาร้านรอบตัว ' . $user_name . 'มั้ย หรือหาร้านแถวไหนดี?'
 				];
 				$data = [
 					'replyToken' => $replyToken,
