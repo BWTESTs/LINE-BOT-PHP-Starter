@@ -11,8 +11,24 @@ if (!is_null($events['events'])) {
 	foreach ($events['events'] as $event) {
 		// Reply only when message sent is in 'text' format
 
+		// token to confirm reply to correct message
 		$replyToken = $event['replyToken'];
 
+		// get user id
+		$userId = null;
+		$groupId = null;
+		$roomId = null;
+		if ($event['source']['type'] == 'user') {
+			$userId = $event['source']['userId'];
+		}
+		if ($event['source']['type'] == 'group') {
+			$groupId = $event['source']['groupId'];
+		}
+		if ($event['source']['type'] == 'room') {
+			$roomId = $event['source']['roomId'];
+		}
+
+		// get location
 		if ($event['type'] == 'message' && $event['message']['type'] == 'location')
 		{
 			$messages = [
@@ -147,7 +163,6 @@ if (!is_null($events['events'])) {
 			// Get text sent
 			$text = $event['message']['text'];
 			// Get replyToken
-			//$replyToken = $event['replyToken'];
 
 			if (strpos(strtolower($text), 'help') !== false || strpos($text, 'หาอะไรได้บ้าง') !== false) {
 				// Build message to reply back
@@ -178,7 +193,7 @@ if (!is_null($events['events'])) {
 				];
 			}
 			else if (strpos($text, 'ทำไรอยู่') !== false || strpos($text, 'เฮ้ย') !== false) {
-				$array_messages = array("นั่งหาร้านอาหารอร่อยๆ อยู่อ่ะ กินไรยังเนี่ย?", "กำลังจะอาบน้ำ ว่าจะไปหาอะไรกินสักหน่อย แล้วนี่กินไรยัง?", "กำลังจะทำกับข้าวกินกับที่บ้าน กินไรยังวะ");
+				$array_messages = array("นั่งหาร้านอาหารอร่อยๆ อยู่อ่ะ กินไรยังเนี่ย?", "กำลังจะอาบน้ำ ว่าจะไปหาอะไรกินสักหน่อย แล้วนี่กินไรยัง?", "กำลังจะทำกับข้าวกินกับที่บ้าน กินไรยัง?");
 				$messages = [
 					'type' => 'text',
 					'text' => ''.$array_messages[rand(0,2)]
@@ -200,6 +215,16 @@ if (!is_null($events['events'])) {
 				$data = [
 					'replyToken' => $replyToken,
 					'messages' => [$messages,$messages_2],
+				];
+			}
+			else if ($text == 'give me user id') {
+				$messages = [
+					'type' => 'text',
+					'text' => 'ชื่อของคุณคือ ' . $userId
+				];
+				$data = [
+					'replyToken' => $replyToken,
+					'messages' => [$messages],
 				];
 			}
 			else if (strpos($text, 'ยัง') !== false) {
