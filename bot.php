@@ -199,7 +199,6 @@ if (!is_null($events['events'])) {
 					// error opening the file.
 				}
 
-
 				$messages = [
 					'type' => 'text',
 					'text' => 'ว่าไง' . $user_name
@@ -233,11 +232,11 @@ if (!is_null($events['events'])) {
 						}
 						else {
 							// write other userId
-							fwrite($file, $line . '\n');
+							fwrite($file, $line . PHP_EOL);
 						}
 					}
 					// write userId with new name
-					fwrite($file, $userId . '|' . $user_name . '\n');
+					fwrite($file, $userId . '|' . $user_name . PHP_EOL);
 
 					fclose($file);
 				} else {
