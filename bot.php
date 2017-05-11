@@ -293,7 +293,7 @@ if (!is_null($events['events'])) {
 					      array (
 						'thumbnailImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/%E0%B8%81%E0%B9%8B%E0%B8%A7%E0%B8%A2%E0%B9%80%E0%B8%95%E0%B8%B5%E0%B9%8A%E0%B8%A2%E0%B8%A7%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B8%AD_1024px.jpg',
 						'title' => 'ก๋วยเตี๋ยว',
-						'text' => 'description',
+						'text' => ' ',
 						'actions' =>
 						  array (
 							  array (
@@ -307,7 +307,7 @@ if (!is_null($events['events'])) {
 					      array (
 						'thumbnailImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/5239_1024px.jpg',
 						'title' => 'สเต็ก',
-						'text' => 'description',
+						'text' => ' ',
 						'actions' =>
 						array (
 						    array (
@@ -321,7 +321,7 @@ if (!is_null($events['events'])) {
 					      array (
 						'thumbnailImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%97%E0%B8%B01_1024px.jpg',
 						'title' => 'หมูกะทะ',
-						'text' => 'description',
+						'text' => ' ',
 						'actions' =>
 						array (
 						    array (
@@ -335,7 +335,7 @@ if (!is_null($events['events'])) {
 					      array (
 						'thumbnailImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/%E0%B8%AA%E0%B9%89%E0%B8%A1%E0%B8%95%E0%B8%B3_1000px.jpg',
 						'title' => 'ส้มตำ',
-						'text' => 'description',
+						'text' => ' ',
 						'actions' =>
 						array (
 						    array (
@@ -349,7 +349,7 @@ if (!is_null($events['events'])) {
 					      array (
 						'thumbnailImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/2743_1024px.jpg',
 						'title' => 'อาหารญี่ปุ่น',
-						'text' => 'description',
+						'text' => ' ',
 						'actions' =>
 						array (
 						    array (
@@ -756,104 +756,104 @@ if (!is_null($events['events'])) {
 			else if (strpos($text, 'หมูกะทะ') !== false)
 			{
 				$messages = [
-					  'type' => 'template',
-					  'altText' => 'this is a carousel template',
-					  'template' =>
+				  'type' => 'template',
+				  'altText' => 'this is a carousel template',
+				  'template' =>
 					  array (
 					    'type' => 'carousel',
 					    'columns' =>
-					    array (
-					      array (
-						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2015/09/17/ba9b0a672fbf43b8b9d13d17fb2c1721.jpg',
-						'title' => 'ร้าน มังกรซีฟู้ดส์',
-						'text' => 'description',
-						'actions' =>
-						  array (
-							  array (
-							    'type' => 'uri',
-							    'label' => 'View detail',
-							    'uri' => 'https://www.wongnai.com/reviews/e3b9916e89b64da794a5be43a51b07e8',
-							  ),
-							  array (
-							    'type' => 'postback',
-							    'label' => 'Tel:0xx-xxx-xxxx',
-							    'data' => 'action=add&itemid=111',
-							  ),
-						  ),
-					      ),
-					      array (
-						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2011/10/13/ff80808132d2fde50132f9b380315dca.jpg',
-						'title' => 'ร้าน เอี่ยมโภชนา',
-						'text' => 'description',
-						'actions' =>
-						array (
-						    	  array (
-							    'type' => 'uri',
-							    'label' => 'View detail',
-							    'uri' => 'https://www.wongnai.com/reviews/bac3332eacb545d294992f7fbddb86e9',
-							  ),
-							  array (
-							    'type' => 'postback',
-							    'label' => 'Tel:0xx-xxx-xxxx',
-							    'data' => 'action=add&itemid=111',
-							  ),
-						  ),
-					      ),
-					      array (
-						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2015/03/21/060216e0926b4d44babf19864cf14637.jpg',
-						'title' => 'ร้าน บาร์บีคิว รีสอร์ท',
-						'text' => 'description',
-						'actions' =>
-						array (
-						    	  array (
-							    'type' => 'uri',
-							    'label' => 'View detail',
-							    'uri' => 'https://www.wongnai.com/reviews/69e8ea66d20f40999a4fbdb44e587270',
-							  ),
-							  array (
-							    'type' => 'postback',
-							    'label' => 'Tel:0xx-xxx-xxxx',
-							    'data' => 'action=add&itemid=111',
-							  ),
-						  ),
-					      ),
-					      array (
-						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2012/02/20/ff808081357c87fe013599e623625480.jpg',
-						'title' => 'ร้าน เดอะซีซั่น',
-						'text' => 'description',
-						'actions' =>
-						array (
-						    	  array (
-							    'type' => 'uri',
-							    'label' => 'View detail',
-							    'uri' => 'https://www.wongnai.com/reviews/317289c508e94ab289d6681f1db59375',
-							  ),
-							  array (
-							    'type' => 'postback',
-							    'label' => 'Tel:0xx-xxx-xxxx',
-							    'data' => 'action=add&itemid=111',
-							  ),
-						  ),
-					      ),
-					      array (
-						'thumbnailImageUrl' => 'https://img-wongnai.cdn.byteark.com/p/t/2016/03/11/d92274ed48c440a4bf3b1a397aea8b7d.jpg',
-						'title' => 'ร้าน Grill Station',
-						'text' => 'description',
-						'actions' =>
-						array (
-						    	  array (
-							    'type' => 'uri',
-							    'label' => 'View detail',
-							    'uri' => 'https://www.wongnai.com/reviews/2b725afae2d7444eb93bd79045ff8b19',
-							  ),
-							  array (
-							    'type' => 'postback',
-							    'label' => 'Tel:0xx-xxx-xxxx',
-							    'data' => 'action=add&itemid=111',
-							  ),
-						  ),
-					      ),
-					    ),
+						    array (
+							      array (
+											'thumbnailImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/grill_pork/web_mangkorn-seafood.jpg',
+											'title' => 'ร้าน มังกรซีฟู้ดส์',
+											'text' => 'description',
+											'actions' =>
+					  						array (
+													array (
+														'type' => 'uri',
+														'label' => 'ดูข้อมูลและรีวิว',
+														'uri' => 'https://www.wongnai.com/restaurants/195156Es-%E0%B8%A1%E0%B8%B1%E0%B8%87%E0%B8%81%E0%B8%A3%E0%B8%8B%E0%B8%B5%E0%B8%9F%E0%B8%B9%E0%B9%89%E0%B8%94%E0%B8%AA%E0%B9%8C',
+													),
+													array (
+														'type' => 'uri',
+														'label' => 'โทร 083-096-6379',
+														'uri' => 'tel:0952514507',
+													),
+						  					),
+					      		),
+					      		array (
+											'thumbnailImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/grill_pork/web_aiem-pochana.jpg',
+											'title' => 'ร้าน เอี่ยมโภชนา',
+											'text' => 'หม้อไฟก็ดี หมูกระทะก็โดนหอยแครงก็เด็ด',
+											'actions' =>
+												array (
+													array (
+														'type' => 'uri',
+														'label' => 'ดูข้อมูลและรีวิว',
+														'uri' => 'https://www.wongnai.com/restaurants/10689hY-%E0%B9%80%E0%B8%AD%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%A1%E0%B9%82%E0%B8%A0%E0%B8%8A%E0%B8%99%E0%B8%B2',
+													),
+													array (
+														'type' => 'uri',
+														'label' => 'โทร 02-225-0582',
+														'uri' => 'tel:0952514507',
+													),
+						  					),
+					      		),
+					      		array (
+											'thumbnailImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/grill_pork/web_bar-b-q-resort.jpg',
+											'title' => 'ร้าน บาร์บีคิว รีสอร์ท',
+											'text' => 'ร้านหมูกะทะในย่านรามอินทรา ร้านนี้ดีที่สุด เพราะแถบนี้มีร้านเดียว',
+											'actions' =>
+												array (
+													array (
+														'type' => 'uri',
+														'label' => 'ดูข้อมูลและรีวิว',
+														'uri' => 'https://www.wongnai.com/restaurants/9030na-%E0%B8%9A%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%9A%E0%B8%B5%E0%B8%84%E0%B8%B4%E0%B8%A7-%E0%B8%A3%E0%B8%B5%E0%B8%AA%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%97-%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B8%AD%E0%B8%B4%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%B2',
+													),
+													array (
+														'type' => 'uri',
+														'label' => 'โทร 088-249-5299',
+														'uri' => 'tel:0952514507',
+													),
+						  					),
+					      		),
+					      		array (
+											'thumbnailImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/grill_pork/web_the-season.jpg',
+											'title' => 'ร้าน เดอะซีซั่น',
+											'text' => 'บุฟเฟต์ที่คุ้มที่สุดในราคาแค่นี้',
+											'actions' =>
+												array (
+													array (
+														'type' => 'uri',
+														'label' => 'ดูข้อมูลและรีวิว',
+														'uri' => 'https://www.wongnai.com/restaurants/13673ku-%E0%B9%80%E0%B8%94%E0%B8%AD%E0%B8%B0%E0%B8%8B%E0%B8%B5%E0%B8%8B%E0%B8%B1%E0%B9%88%E0%B8%99',
+													),
+													array (
+														'type' => 'uri',
+														'label' => 'โทร 082-344-5024',
+														'uri' => 'tel:0952514507',
+													),
+						  					),
+					      		),
+							      array (
+											'thumbnailImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/grill_pork/web_grill-station.jpg',
+											'title' => 'ร้าน Grill Station',
+											'text' => 'กลางๆ ไม่ดี ไม่เลว',
+											'actions' =>
+												array (
+													array (
+														'type' => 'uri',
+														'label' => 'ดูข้อมูลและรีวิว',
+														'uri' => 'https://www.wongnai.com/restaurants/grill-station',
+													),
+													array (
+														'type' => 'uri',
+														'label' => 'โทร 098-367-3732',
+														'uri' => 'tel:0952514507',
+													),
+								  			),
+							      ),
+					    	),
 					  ),
 				];
 				$data = [
@@ -1082,6 +1082,61 @@ if (!is_null($events['events'])) {
 				$messages = [
 					  'type' => 'text',
 					  'text' => 'ค้นหาสูตรอาหาร'
+				];
+				$data = [
+					'replyToken' => $replyToken,
+					'messages' => [$messages],
+				];
+			}
+			else if (strpos($text, 'สปาเก็ตตี้คาโบนาร่า') !== false)
+			{
+				$messages = [
+					'type' => 'image',
+					'originalContentUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/web_spaghetti_carbonara.jpg',
+					'previewImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/web_240p_spaghetti_carbonara'
+				];
+				$messages_2 = [
+					'type' => 'text',
+					'text' => 'ส่วนผสม
+						1. เบคอน (ปริมาณตามชอบ)
+						2. นมสด 200 มิลลิลิตร
+						3. ไข่ไก่ 1 ฟอง
+						4. พาร์เมซานชีสขูด 1 ช้อนโต๊ะ
+						5. น้ำสำหรับต้มเส้นสปาเกตตี
+						6. เส้นสปาเกตตี 25 กรัม
+						7. เกลือป่น
+						8. น้ำมันมะกอก
+						9. กระเทียมสับ
+						10. พริกไทยดำ'
+				];
+				$messages_3 = [
+					'type' => 'text',
+					'text' => 'ขั้นตอนการทำ
+						1. หั่นเบคอนเป็นชิ้นเล็ก ๆ เตรียมไว้
+						2. ตีผสมนมสดกับไข่ไก่เข้าด้วยกัน
+						3. จากนั้นใส่พาร์เมซานชีสลงไปตีให้เข้ากันอีกครั้ง เตรียมไว้
+						4. ใส่น้ำลงในหม้อ ตามดวยเกลือป่นและน้ำมันมะกอกเล็กน้อย
+						5. ใส่เส้นสปาเกตตีลงไปต้มในน้ำเดือดประมาณ 5 นาที
+						6. พอสุกแล้วตักเส้นสปาเกตตีใส่ลงในน้ำเย็น
+						7. จากนั้นตักเส้นสปาเกตตีขึ้นสะเด็ดน้ำมัน ใส่น้ำมันมะกอกลงไปเล็กน้อย
+						8. เคล้าผสมเส้นสปาเกตตีกับน้ำมันเพื่อให้เส้นไม่ติดกัน เตรียมไว้
+						9. นำเบคอนที่หั่นไว้ลงไปทอดในกระทะที่ใส่น้ำมันไว้เล็กน้อย ทอดจนเบคอนเหลืองกรอบ (ตักแบ่งเบคอนกรอบเล็กน้อยไว้สำหรับโรยหน้าก่อนเสิร์ฟ)
+						10. ใส่กระเทียมลงไปผัดจนหอม
+						11. ใส่เส้นสปาเกตตีลงไปผัดจนเส้นสุกนุ่มตามต้องการ
+						12. เทส่วนผสมซอสคาโบนาราลงไป
+						13. ผัดให้เข้ากันและส่วนผสมเดือด
+						14. ตักใส่จาน โรยหน้าด้วยพาร์เมซานชีส พริกไทยดำ และเบคอนทอดกรอบ พร้อมเสิร์ฟ'
+				];
+				$data = [
+					'replyToken' => $replyToken,
+					'messages' => [$messages, $messages_2, $messages_3],
+				];
+			}
+			else if (strpos($text, 'ขอบคุณ') !== false || strpos($text, 'ขอบใจ') !== false) {
+				$messages = [
+					'type' => 'sticker',
+					'packageId' => '1',
+					'stickerId' => '122'
 				];
 				$data = [
 					'replyToken' => $replyToken,
