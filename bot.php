@@ -432,7 +432,7 @@ if (!is_null($events['events'])) {
 					    'columns' =>
 					    	array (
 						      array (
-										'thumbnailImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/steak/arnos-butcher-and-eatery.jpg',
+										'thumbnailImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/steak/web_arnos-butcher-and-eatery.jpg',
 										'title' => 'ร้าน Arno"s Butcher and Eatery',
 										'text' => 'description',
 										'actions' =>
@@ -450,7 +450,7 @@ if (!is_null($events['events'])) {
 							  			),
 				      		),
 					      	array (
-										'thumbnailImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/steak/el-gaucho-argentinian-steakhouse.jpg',
+										'thumbnailImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/steak/web_el-gaucho-argentinian-steakhouse.jpg',
 										'title' => 'ร้าน El Gaucho Argentinian Steakhouse',
 										'text' => 'description',
 										'actions' =>
@@ -468,7 +468,7 @@ if (!is_null($events['events'])) {
 										  ),
 						      ),
 					      	array (
-										'thumbnailImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/steak/kritsada-steak-house.jpg',
+										'thumbnailImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/steak/web_kritsada-steak-house.jpg',
 										'title' => 'ร้าน Kritsada Steak House',
 										'text' => 'description',
 										'actions' =>
@@ -486,7 +486,7 @@ if (!is_null($events['events'])) {
 					  					),
 					      	),
 					      	array (
-										'thumbnailImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/steak/eat-am-are.jpg',
+										'thumbnailImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/steak/web_eat-am-are.jpg',
 										'title' => 'ร้าน Eat Am Are',
 										'text' => 'description',
 										'actions' =>
@@ -504,7 +504,7 @@ if (!is_null($events['events'])) {
 							  			),
 					      	),
 						      array (
-										'thumbnailImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/steak/kobe-steakhouse.jpg',
+										'thumbnailImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/steak/web_kobe-steakhouse.jpg',
 										'title' => 'ร้าน Kobe Steakhouse',
 										'text' => 'description',
 										'actions' =>
