@@ -368,9 +368,7 @@ if (!is_null($events['events'])) {
 					'messages' => [$messages, $messages_2],
 				];
 			}
-			else if (strpos($text, 'เราเลือกก๋วยเตี๋ยว') !== false || strpos($text, 'เราเลือกสเต็ก') !== false ||
-							strpos($text, 'เราเลือกหมูกระทะ') !== false || strpos($text, 'เราเลือกส้มตำ') !== false ||
-							strpos($text, 'เราเลือกอาหารญี่ปุ่น') !== false)
+			else if ($text == 'เราเลือกก๋วยเตี๋ยว' || $text == 'เราเลือกสเต็ก' || $text == 'เราเลือกหมูกระทะ' || $text == 'เราเลือกส้มตำ' || $text == 'เราเลือกอาหารญี่ปุ่น')
 			{
 				$user_name = 'คุณ';
 				$file = fopen("filename.dat", "r");
