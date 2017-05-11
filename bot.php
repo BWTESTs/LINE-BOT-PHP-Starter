@@ -212,7 +212,7 @@ if (!is_null($events['events'])) {
 				$array_messages = array("นั่งหาร้านอาหารอร่อยๆ อยู่อ่ะ กินไรยังเนี่ย?", "กำลังจะอาบน้ำ ว่าจะไปหาอะไรกินสักหน่อย แล้วนี่กินไรยัง?", "กำลังจะทำกับข้าวกินกับที่บ้าน กินไรยัง?");
 				$messages = [
 					'type' => 'text',
-					'text' => $array_messages[rand(0,2)]
+					'text' => ''.$array_messages[rand(0,2)]
 				];
 				$data = [
 					'replyToken' => $replyToken,
@@ -1145,7 +1145,7 @@ if (!is_null($events['events'])) {
 				$messages = [
 					'type' => 'sticker',
 					'packageId' => '1',
-					'stickerId' => $array_messages(rand[0,4])
+					'stickerId' => ''.$array_messages(rand[0,4])
 				];
 				$data = [
 					'replyToken' => $replyToken,
