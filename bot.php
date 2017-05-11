@@ -434,7 +434,7 @@ if (!is_null($events['events'])) {
 						      array (
 										'thumbnailImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/steak/web_arnos-butcher-and-eatery.jpg',
 										'title' => 'ร้าน Arno"s Butcher and Eatery',
-										'text' => 'description',
+										'text' => 'ร้านสเต๊กและอาหารสไตล์ฝรั่งเศส โดยคนฝรั่งเศส ปริมาณคุ้มค่า คุ้มราคา',
 										'actions' =>
 							  			array (
 												array (
@@ -452,7 +452,7 @@ if (!is_null($events['events'])) {
 					      	array (
 										'thumbnailImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/steak/web_el-gaucho-argentinian-steakhouse.jpg',
 										'title' => 'ร้าน El Gaucho Argentinian Steakhouse',
-										'text' => 'description',
+										'text' => 'มื้อเที่ยงแบบจัดหนัก',
 										'actions' =>
 											array (
 												array (
@@ -470,7 +470,7 @@ if (!is_null($events['events'])) {
 					      	array (
 										'thumbnailImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/steak/web_kritsada-steak-house.jpg',
 										'title' => 'ร้าน Kritsada Steak House',
-										'text' => 'description',
+										'text' => 'อิ่ม อร่อย ราคา (ไม่) แรงมาก',
 										'actions' =>
 											array (
 												array (
@@ -488,7 +488,7 @@ if (!is_null($events['events'])) {
 					      	array (
 										'thumbnailImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/steak/web_eat-am-are.jpg',
 										'title' => 'ร้าน Eat Am Are',
-										'text' => 'description',
+										'text' => 'ร้านสเต๊กที่มีคนชวนมาทาน',
 										'actions' =>
 											array (
 												array (
@@ -506,7 +506,7 @@ if (!is_null($events['events'])) {
 						      array (
 										'thumbnailImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/steak/web_kobe-steakhouse.jpg',
 										'title' => 'ร้าน Kobe Steakhouse',
-										'text' => 'description',
+										'text' => 'ร้านสเต็กที่อยู่คู่สยามมายาวนาน',
 										'actions' =>
 											array (
 												array (
@@ -658,7 +658,7 @@ if (!is_null($events['events'])) {
 						      array (
 										'thumbnailImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/steak/web_arnos-butcher-and-eatery.jpg',
 										'title' => 'ร้าน Arno"s Butcher and Eatery',
-										'text' => 'description',
+										'text' => 'ร้านสเต๊กและอาหารสไตล์ฝรั่งเศส โดยคนฝรั่งเศส ปริมาณคุ้มค่า คุ้มราคา',
 										'actions' =>
 							  			array (
 												array (
@@ -676,7 +676,7 @@ if (!is_null($events['events'])) {
 					      	array (
 										'thumbnailImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/steak/web_el-gaucho-argentinian-steakhouse.jpg',
 										'title' => 'ร้าน El Gaucho Argentinian Steakhouse',
-										'text' => 'description',
+										'text' => 'มื้อเที่ยงแบบจัดหนัก',
 										'actions' =>
 											array (
 												array (
@@ -694,7 +694,7 @@ if (!is_null($events['events'])) {
 					      	array (
 										'thumbnailImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/steak/web_kritsada-steak-house.jpg',
 										'title' => 'ร้าน Kritsada Steak House',
-										'text' => 'description',
+										'text' => 'อิ่ม อร่อย ราคา (ไม่) แรงมาก',
 										'actions' =>
 											array (
 												array (
@@ -712,7 +712,7 @@ if (!is_null($events['events'])) {
 					      	array (
 										'thumbnailImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/steak/web_eat-am-are.jpg',
 										'title' => 'ร้าน Eat Am Are',
-										'text' => 'description',
+										'text' => 'ร้านสเต๊กที่มีคนชวนมาทาน',
 										'actions' =>
 											array (
 												array (
@@ -730,7 +730,7 @@ if (!is_null($events['events'])) {
 						      array (
 										'thumbnailImageUrl' => 'https://bw-chatbot-singha.herokuapp.com/images/steak/web_kobe-steakhouse.jpg',
 										'title' => 'ร้าน Kobe Steakhouse',
-										'text' => 'description',
+										'text' => 'ร้านสเต็กที่อยู่คู่สยามมายาวนาน',
 										'actions' =>
 											array (
 												array (
