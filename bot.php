@@ -1141,11 +1141,11 @@ if (!is_null($events['events'])) {
 				];
 			}
 			else if (strpos($text, 'ขอบคุณ') !== false || strpos($text, 'ขอบใจ') !== false) {
-				$array_messages = array(120,122,125,130,132);
+				$array_messages_thank = array("120", "122", "125", "130", "132");
 				$messages = [
 					'type' => 'sticker',
 					'packageId' => '1',
-					'stickerId' => ''.$array_messages(rand[0,4])
+					'stickerId' => ''.$array_messages_thank(rand[0,4])
 				];
 				$data = [
 					'replyToken' => $replyToken,
