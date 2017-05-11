@@ -212,7 +212,7 @@ if (!is_null($events['events'])) {
 				$array_messages = array("นั่งหาร้านอาหารอร่อยๆ อยู่อ่ะ กินไรยังเนี่ย?", "กำลังจะอาบน้ำ ว่าจะไปหาอะไรกินสักหน่อย แล้วนี่กินไรยัง?", "กำลังจะทำกับข้าวกินกับที่บ้าน กินไรยัง?");
 				$messages = [
 					'type' => 'text',
-					'text' => ''.$array_messages[rand(0,2)]
+					'text' => $array_messages[rand(0,2)]
 				];
 				$data = [
 					'replyToken' => $replyToken,
@@ -424,6 +424,10 @@ if (!is_null($events['events'])) {
 			else if (strpos($text, 'ไม่โดนใจ') !== false)
 			{
 				$messages = [
+					'type' => 'text',
+					'text' => 'งั้นขอสิงหาแก้ตัวใหม่นะ'
+				];
+				$messages_2 = [
 				  'type' => 'template',
 				  'altText' => 'this is a carousel template',
 				  'template' =>
@@ -524,9 +528,13 @@ if (!is_null($events['events'])) {
 					    	),
 					  ),
 				];
+				$messages_3 = [
+					'type' => 'text',
+					'text' => 'แล้วร้านพวกนี้ล่ะ โดนใจมั้ย'
+				];
 				$data = [
 					'replyToken' => $replyToken,
-					'messages' => [$messages],
+					'messages' => [$messages, $messages_2, $messages_3],
 				];
 			}
 			else if (strpos($text, 'ค้นหาร้าน') !== false)
@@ -1133,10 +1141,11 @@ if (!is_null($events['events'])) {
 				];
 			}
 			else if (strpos($text, 'ขอบคุณ') !== false || strpos($text, 'ขอบใจ') !== false) {
+				$array_messages = array("120","122","125","130","132");
 				$messages = [
 					'type' => 'sticker',
 					'packageId' => '1',
-					'stickerId' => '122'
+					'stickerId' => array_messages(rand[0,4])
 				];
 				$data = [
 					'replyToken' => $replyToken,
