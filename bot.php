@@ -276,7 +276,7 @@ if (!is_null($events['events'])) {
 					'messages' => [$messages],
 				];
 			}
-			else if (strpos($text, 'มีอะไรให้เลือก') !== false || strpos($text, 'แนะนำ') !== false) {
+			else if (strpos($text, 'มีอะไรให้เลือก') !== false || strpos($text, 'แนะนำ') !== false || strpos($text, 'ค้นหาตามประเภท') !== false) {
 				// Build message to reply back
 				$messages = [
 					'type' => 'text',
@@ -761,7 +761,7 @@ if (!is_null($events['events'])) {
 					'messages' => [$messages],
 				];
 			}
-			else if (strpos($text, 'หมูกะทะ') !== false)
+			else if (strpos($text, 'หมูกะทะ') !== false || strpos($text, 'ชื่นชอบ') !== false)
 			{
 				$messages = [
 				  'type' => 'template',
