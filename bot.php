@@ -53,7 +53,7 @@ if (!is_null($events['events'])) {
 									  array (
 									    'type' => 'uri',
 									    'label' => 'โทร 081-443-6629',
-									    'uri' => 'tel:0952514507',
+									    'uri' => 'tel:0822318917',
 									  ),
 				  				),
 			      	),
@@ -71,7 +71,7 @@ if (!is_null($events['events'])) {
 									  array (
 									    'type' => 'uri',
 									    'label' => 'โทร 02-258-6746',
-									    'uri' => 'tel:0952514507',
+									    'uri' => 'tel:0822318917',
 									  ),
 							  	),
 				      ),
@@ -89,7 +89,7 @@ if (!is_null($events['events'])) {
 										array (
 											'type' => 'uri',
 											'label' => 'โทร 091-142-8989',
-											'uri' => 'tel:0952514507',
+											'uri' => 'tel:0822318917',
 										),
 								  ),
 			      	),
@@ -107,7 +107,7 @@ if (!is_null($events['events'])) {
 									array (
 										'type' => 'uri',
 										'label' => 'โทร 089-446-3818',
-										'uri' => 'tel:0952514507',
+										'uri' => 'tel:0822318917',
 									),
 							  ),
 				      ),
@@ -125,7 +125,7 @@ if (!is_null($events['events'])) {
 										array (
 											'type' => 'uri',
 											'label' => 'โทร 087-698-8913',
-											'uri' => 'tel:0952514507',
+											'uri' => 'tel:0822318917',
 										),
 								  ),
 			      	),
@@ -449,7 +449,7 @@ if (!is_null($events['events'])) {
 											  array (
 											    'type' => 'uri',
 											    'label' => 'โทร 02-678-8340',
-											    'uri' => 'tel:0952514507',
+											    'uri' => 'tel:0822318917',
 											  ),
 							  			),
 				      		),
@@ -467,7 +467,7 @@ if (!is_null($events['events'])) {
 											  array (
 											    'type' => 'uri',
 											    'label' => 'โทร 02-255-2864',
-											    'uri' => 'tel:0952514507',
+											    'uri' => 'tel:0822318917',
 											  ),
 										  ),
 						      ),
@@ -485,7 +485,7 @@ if (!is_null($events['events'])) {
 											  array (
 											    'type' => 'uri',
 											    'label' => 'โทร 081-844-9931',
-											    'uri' => 'tel:0952514507',
+											    'uri' => 'tel:0822318917',
 											  ),
 					  					),
 					      	),
@@ -503,7 +503,7 @@ if (!is_null($events['events'])) {
 												array (
 													'type' => 'uri',
 													'label' => 'โทร 085-099-4956',
-													'uri' => 'tel:0952514507',
+													'uri' => 'tel:0822318917',
 												),
 							  			),
 					      	),
@@ -521,7 +521,7 @@ if (!is_null($events['events'])) {
 												array (
 													'type' => 'uri',
 													'label' => 'โทร 02-251-1336',
-													'uri' => 'tel:0952514507',
+													'uri' => 'tel:0822318917',
 												),
 						  				),
 					      	),
@@ -569,7 +569,7 @@ if (!is_null($events['events'])) {
 										  array (
 										    'type' => 'uri',
 										    'label' => 'โทร 081-443-6629',
-										    'uri' => 'tel:0952514507',
+										    'uri' => 'tel:0822318917',
 										  ),
 					  				),
 				      	),
@@ -587,7 +587,7 @@ if (!is_null($events['events'])) {
 										  array (
 										    'type' => 'uri',
 										    'label' => 'โทร 02-258-6746',
-										    'uri' => 'tel:0952514507',
+										    'uri' => 'tel:0822318917',
 										  ),
 								  	),
 					      ),
@@ -605,7 +605,7 @@ if (!is_null($events['events'])) {
 											array (
 												'type' => 'uri',
 												'label' => 'โทร 091-142-8989',
-												'uri' => 'tel:0952514507',
+												'uri' => 'tel:0822318917',
 											),
 									  ),
 				      	),
@@ -623,7 +623,7 @@ if (!is_null($events['events'])) {
 										array (
 											'type' => 'uri',
 											'label' => 'โทร 089-446-3818',
-											'uri' => 'tel:0952514507',
+											'uri' => 'tel:0822318917',
 										),
 								  ),
 					      ),
@@ -641,7 +641,7 @@ if (!is_null($events['events'])) {
 											array (
 												'type' => 'uri',
 												'label' => 'โทร 087-698-8913',
-												'uri' => 'tel:0952514507',
+												'uri' => 'tel:0822318917',
 											),
 									  ),
 				      	),
@@ -677,7 +677,7 @@ if (!is_null($events['events'])) {
 											  array (
 											    'type' => 'uri',
 											    'label' => 'โทร 02-678-8340',
-											    'uri' => 'tel:0952514507',
+											    'uri' => 'tel:0822318917',
 											  ),
 							  			),
 				      		),
@@ -695,7 +695,7 @@ if (!is_null($events['events'])) {
 											  array (
 											    'type' => 'uri',
 											    'label' => 'โทร 02-255-2864',
-											    'uri' => 'tel:0952514507',
+											    'uri' => 'tel:0822318917',
 											  ),
 										  ),
 						      ),
@@ -713,7 +713,7 @@ if (!is_null($events['events'])) {
 											  array (
 											    'type' => 'uri',
 											    'label' => 'โทร 081-844-9931',
-											    'uri' => 'tel:0952514507',
+											    'uri' => 'tel:0822318917',
 											  ),
 					  					),
 					      	),
@@ -731,7 +731,7 @@ if (!is_null($events['events'])) {
 												array (
 													'type' => 'uri',
 													'label' => 'โทร 085-099-4956',
-													'uri' => 'tel:0952514507',
+													'uri' => 'tel:0822318917',
 												),
 							  			),
 					      	),
@@ -749,7 +749,7 @@ if (!is_null($events['events'])) {
 												array (
 													'type' => 'uri',
 													'label' => 'โทร 02-251-1336',
-													'uri' => 'tel:0952514507',
+													'uri' => 'tel:0822318917',
 												),
 						  				),
 					      	),
@@ -785,7 +785,7 @@ if (!is_null($events['events'])) {
 													array (
 														'type' => 'uri',
 														'label' => 'โทร 083-096-6379',
-														'uri' => 'tel:0952514507',
+														'uri' => 'tel:0822318917',
 													),
 						  					),
 					      		),
@@ -803,7 +803,7 @@ if (!is_null($events['events'])) {
 													array (
 														'type' => 'uri',
 														'label' => 'โทร 02-225-0582',
-														'uri' => 'tel:0952514507',
+														'uri' => 'tel:0822318917',
 													),
 						  					),
 					      		),
@@ -821,7 +821,7 @@ if (!is_null($events['events'])) {
 													array (
 														'type' => 'uri',
 														'label' => 'โทร 088-249-5299',
-														'uri' => 'tel:0952514507',
+														'uri' => 'tel:0822318917',
 													),
 						  					),
 					      		),
@@ -839,7 +839,7 @@ if (!is_null($events['events'])) {
 													array (
 														'type' => 'uri',
 														'label' => 'โทร 082-344-5024',
-														'uri' => 'tel:0952514507',
+														'uri' => 'tel:0822318917',
 													),
 						  					),
 					      		),
@@ -857,7 +857,7 @@ if (!is_null($events['events'])) {
 													array (
 														'type' => 'uri',
 														'label' => 'โทร 098-367-3732',
-														'uri' => 'tel:0952514507',
+														'uri' => 'tel:0822318917',
 													),
 								  			),
 							      ),
