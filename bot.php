@@ -187,7 +187,7 @@ if (!is_null($events['events'])) {
 					'messages' => [$messages],
 				];
 			}
-			else if (str_starts_with($text, 'SINGHA') !== false || str_starts_with($text, 'สิงห์') !== false) {
+			else if (str_starts_with(strtolower($text), 'SINGHA') !== false || str_starts_with($text, 'สิงห์') !== false) {
 
 				$user_name = '';
 				$file = fopen("filename.dat", "r");
@@ -274,7 +274,7 @@ if (!is_null($events['events'])) {
 			else if (strpos($text, 'ยัง') !== false) {
 				$messages = [
 					'type' => 'text',
-					'text' => 'มีเมนูหรือร้านในใจยัง ให้สิงหาแนะนำป่ะ'
+					'text' => 'มีเมนูหรือร้านในใจยัง ให้ SINGHA FOOD แนะนำป่ะ'
 				];
 				$data = [
 					'replyToken' => $replyToken,
@@ -430,7 +430,7 @@ if (!is_null($events['events'])) {
 			{
 				$messages = [
 					'type' => 'text',
-					'text' => 'งั้นขอสิงหาแก้ตัวใหม่นะ'
+					'text' => 'งั้นขอ SINGHA FOOD แก้ตัวใหม่นะ'
 				];
 				$messages_2 = [
 				  'type' => 'template',
