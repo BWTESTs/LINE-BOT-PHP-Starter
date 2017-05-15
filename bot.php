@@ -1,4 +1,9 @@
 <?php
+function str_starts_with($haystack, $needle)
+{
+    return strpos($haystack, $needle) === 0;
+}
+
 $access_token = '5eJQBT5OVKGnLsE6lXXUHhxo3ySkrok2TzSc+JbWs/I7l9jC91Ymn5WDELvNADkMjzirUo0XRjswVSHpIEoNyvEkaMPzHJfz6xyyIwo/H9yFVYtJbkKlYmX9bOWn9AIOur5vWMlhlU+xtEm3e9rNqAdB04t89/1O/w1cDnyilFU=';
 
 // Get POST body content
@@ -182,7 +187,7 @@ if (!is_null($events['events'])) {
 					'messages' => [$messages],
 				];
 			}
-			else if (startsWith($text, 'SINGHA') !== false || startsWith($text, 'สิงห์') !== false) {
+			else if (str_starts_with($text, 'SINGHA') !== false || str_starts_with($text, 'สิงห์') !== false) {
 
 				$user_name = '';
 				$file = fopen("filename.dat", "r");
