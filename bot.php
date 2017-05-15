@@ -187,7 +187,7 @@ if (!is_null($events['events'])) {
 					'messages' => [$messages],
 				];
 			}
-			else if (str_starts_with(strtolower($text), 'SINGHA') !== false || str_starts_with($text, 'สิงห์') !== false) {
+			else if (str_starts_with(strtolower($text), 'singha') !== false || str_starts_with($text, 'สิงห์') !== false) {
 
 				$user_name = '';
 				$file = fopen("filename.dat", "r");
